@@ -1,0 +1,17 @@
+:root {
+	background: var(--color-background);
+	color: var(--color-font);
+	font-family: var(--font-main);
+}
+
+:root button {
+	font-family: var(--font-main);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--color-link);
+	text-decoration: underline;
+}

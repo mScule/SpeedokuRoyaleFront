@@ -1,0 +1,20 @@
+.zone {
+	border-radius: var(--roundness-medium);
+	padding-top: var(--buffer-small);
+}
+.zone > header > * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.zone > header {
+	margin: 0;
+}
+
+.zone > *:first-child {
+	margin-bottom: var(--buffer-small);
+}
+
+.zone > *:last-child {
+	margin-bottom: 0;
+}

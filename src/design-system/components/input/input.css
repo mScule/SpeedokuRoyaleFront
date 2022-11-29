@@ -1,0 +1,11 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	background: transparent;
+	color: var(--color-font);
+	align-items: center;
+	padding: var(--buffer-small);
+	border-radius: var(--roundness-medium);
+	display: flex;
+}

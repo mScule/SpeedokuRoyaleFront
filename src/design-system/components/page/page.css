@@ -1,0 +1,10 @@
+.page {
+	max-width: var(--page-max-width);
+	min-width: var(--page-min-width);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.page > *:first-child {
+	margin-bottom: var(--buffer-small);
+}

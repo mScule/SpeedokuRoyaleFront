@@ -1,0 +1,42 @@
+.icon-button.small svg {
+	font-size: var(--icon-small);
+}
+
+.icon-button.medium svg {
+	font-size: var(--icon-medium);
+}
+
+.icon-button.large svg {
+	font-size: var(--icon-large);
+}
+
+.icon-button.slim {
+	background: transparent;
+	color: var(--color-font);
+	border: 0;
+	padding: 0;
+	align-items: center;
+}
+
+.icon-button.slim.small {
+	width: var(--icon-small);
+	height: var(--icon-small);
+}
+
+.icon-button.slim.medium {
+	width: var(--icon-medium);
+	height: var(--icon-medium);
+}
+
+.icon-button.slim.large {
+	width: var(--icon-large);
+	height: var(--icon-large);
+}
+
+.icon-button.slim:hover {
+	color: var(--color-fill);
+}
+
+.icon-button.slim:active {
+	color: transparent;
+}

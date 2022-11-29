@@ -1,0 +1,17 @@
+.text-button {
+	background: transparent;
+	color: var(--color-font);
+	font-weight: bold;
+	font-size: medium;
+	border: 0;
+	padding: 0;
+	align-items: center;
+}
+
+.text-button:hover {
+	color: var(--color-fill);
+}
+
+.text-button:active {
+	color: transparent;
+}

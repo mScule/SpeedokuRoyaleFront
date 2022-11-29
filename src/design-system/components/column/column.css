@@ -1,0 +1,12 @@
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column > * {
+	margin-bottom: var(--buffer-small);
+}
+
+.column > *:last-child {
+	margin-bottom: 0;
+}

@@ -1,0 +1,20 @@
+figure.icon {
+    margin: 0;
+}
+
+.icon {
+    color: var(--color-fill);
+}
+
+.icon.small {
+	font-size: var(--icon-small);
+}
+
+.icon.medium {
+	font-size: var(--icon-medium);
+}
+
+.icon.large {
+	font-size: var(--icon-large);
+}
+

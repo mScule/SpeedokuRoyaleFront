@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+  /* Base colors */
+  --black:      black;
+  --gray-dark:  #1e1e1e;
+  --gray:       #6a6a6a;
+  --gray-light: #b6b6b6;
+  --white:      snow;
+
+  --red:    lightcoral;
+  --yellow: gold;
+  --green:  lightgreen;
+  --blue:   #008eff;
+  --violet: violet;
+
+  /* Font */
+  --font-main: "Nunito", sans-serif;
+
+  /* Buffers */
+  --buffer-small:  0.5rem;
+  --buffer-medium: 1rem;
+  --buffer-large:  2rem;
+
+  /* Roundness */
+  --roundness-small:  2px;
+  --roundness-medium: 8px;
+  --roundness-large:  16px;
+
+  /* Fatness */
+  --fatness-small:  1px;
+  --fatness-medium: 2px;
+  --fatness-large:  4px;
+
+  /* Icon */
+  --icon-small:  15px;
+  --icon-medium: 20px;
+  --icon-large:  30px;
+
+  /* Page */
+  --page-max-width: 40rem;
+  --page-min-width: 8rem;
+}

@@ -1,0 +1,126 @@
+.margin-small {
+  margin: var(--buffer-small);
+}
+.margin-medium {
+  margin: var(--buffer-medium);
+}
+.margin-large {
+  margin: var(--buffer-large);
+}
+
+.border-small {
+  border: solid var(--color-fill) var(--fatness-small);
+}
+.border-medium {
+  border: solid var(--color-fill) var(--fatness-medium);
+}
+.border-large {
+  border: solid var(--color-fill) var(--fatness-large);
+}
+
+.border-radius-small {
+  border-radius: var(--roundness-small);
+}
+.border-radius-medium {
+  border-radius: var(--roundness-medium);
+}
+.border-radius-large {
+  border-radius: var(--roundness-large);
+}
+
+.padding-small {
+  padding: var(--buffer-small);
+}
+.padding-medium {
+  padding: var(--buffer-medium);
+}
+.padding-large {
+  padding: var(--buffer-large);
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-start {
+  justify-content: flex-start;
+}
+.space-center {
+  justify-content: center;
+}
+.space-end {
+  justify-content: end;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row.inverted {
+  flex-direction: row-reverse;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column.inverted {
+  flex-direction: row-reverse;
+}
+
+.fill,
+.fill-clickable {
+  background: var(--color-font);
+  border: solid var(--color-font) var(--fatness-small);
+  color: var(--color-font-opposite);
+  border-radius: var(--roundness-medium);
+  cursor: pointer;
+}
+.fill-clickable {
+  padding: var(--buffer-small);
+}
+.fill-clickable:hover {
+  background: transparent;
+  color: var(--color-font);
+}
+.fill-clickable:active {
+  color: var(--color-fill);
+  border-color: var(--color-fill);
+}
+.fill-clickable:disabled {
+  background: var(--color-fill);
+  border-color: var(--color-fill);
+  color: var(--color-font-opposite);
+}
+
+.info {
+  border-color: var(--color-info);
+  color: var(--color-info);
+}
+.success {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+.warning {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+.danger {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
