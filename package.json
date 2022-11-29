@@ -15,7 +15,7 @@
     "endOfLine": "lf",
     "htmlWhitespaceSensitivity": "strict",
     "jsxSingleQuote": false,
-    "printWidth": 80,
+    "printWidth": 79,
     "proseWrap": "preserve",
     "semi": false,
     "tabWidth": 2,

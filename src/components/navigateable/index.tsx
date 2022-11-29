@@ -5,6 +5,9 @@ import "./nav-bar.css"
 import {classList} from "@/design-system/utils/class-list"
 
 import {ReactComponent as MenuIcon} from "bootstrap-icons/icons/hash.svg"
+import {ReactComponent as ThemeIcon} from "bootstrap-icons/icons/lightbulb.svg"
+import {ReactComponent as DarkThemeIcon} from "bootstrap-icons/icons/moon.svg"
+import {ReactComponent as LightThemeIcon} from "bootstrap-icons/icons/sun.svg"
 import {ReactComponent as TranslateIcon} from "bootstrap-icons/icons/translate.svg"
 
 import {Row} from "@/design-system/components/row"
@@ -13,10 +16,14 @@ import {Split} from "@/design-system/components/split"
 import {NavBar} from "@/design-system/components/nav-bar"
 import {Section} from "@/design-system/components/section"
 import {TextButton} from "@/design-system/components/text-button"
-import {LocaleContext} from "@/contexts/localecontext"
 
 import {Locale} from "@/i18n/types"
 import {Translate} from "@/i18n"
+
+import {PreferenceContext} from "@/contexts/preference-context"
+import {Preference} from "@/types/preference"
+import {Theme} from "@/types/theme"
+import {IconButton} from "@/design-system/components/icon-button"
 
 interface NavigateableProps {
 	children: ReactNode
@@ -24,11 +31,17 @@ interface NavigateableProps {
 }
 
 export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
-	const {setLocale} = useContext(LocaleContext)
+	const preferences = useContext(PreferenceContext)
 
-	const setEnglish = () => setLocale(Locale.English)
-	const setFinnish = () => setLocale(Locale.Finnish)
-	const setJapanese = () => setLocale(Locale.Japanese)
+	const themePrefs = preferences[Preference.Theme]
+	const localePrefs = preferences[Preference.Locale]
+
+	const setEnglish = () => localePrefs.set(Locale.English)
+	const setFinnish = () => localePrefs.set(Locale.Finnish)
+	const setJapanese = () => localePrefs.set(Locale.Japanese)
+
+	const setDark = () => themePrefs.set(Theme.Dark)
+	const setLight = () => themePrefs.set(Theme.Light)
 
 	return (
 		<>
@@ -50,14 +63,24 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 					</Link>
 				</Row>
 				<Row className="align-center">
+					<Icon caption="light theme" size="medium">
+						<ThemeIcon />
+					</Icon>
+					<IconButton slim size="medium" onClick={setLight}>
+						<LightThemeIcon />
+					</IconButton>
+					<Split size="medium" orientation="vertical" />
+					<IconButton slim size="medium" onClick={setDark}>
+						<DarkThemeIcon />
+					</IconButton>
 					<Icon caption="translate" size="medium">
 						<TranslateIcon />
 					</Icon>
-					<TextButton onClick={setEnglish}>en</TextButton>
+					<TextButton onClick={setEnglish}>{Locale.English}</TextButton>
 					<Split size="medium" orientation="vertical" />
-					<TextButton onClick={setFinnish}>fi</TextButton>
+					<TextButton onClick={setFinnish}>{Locale.Finnish}</TextButton>
 					<Split size="medium" orientation="vertical" />
-					<TextButton onClick={setJapanese}>jp</TextButton>
+					<TextButton onClick={setJapanese}>{Locale.Japanese}</TextButton>
 				</Row>
 			</NavBar>
 			<Section

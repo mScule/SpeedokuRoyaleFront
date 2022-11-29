@@ -1,7 +1,7 @@
 enum Locale {
 	Finnish = "fi",
 	English = "en",
-	Japanese = "jp"
+	Japanese = "ja"
 }
 
 export default Locale
