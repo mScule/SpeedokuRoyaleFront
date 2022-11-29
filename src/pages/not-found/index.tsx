@@ -8,7 +8,7 @@ export const NotFound: FC = () => {
 
 	return (
 		<Article title={translate("title-not-found")}>
-			<p>The page you tried to access doesn't exist.</p>
+			<p><Translate id="article-page-not-found" /></p>
 			<Link to="/">
 				<Translate id="link-go-home" />
 			</Link>

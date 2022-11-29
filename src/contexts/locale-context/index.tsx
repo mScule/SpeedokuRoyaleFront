@@ -1,12 +1,12 @@
+import {createContext} from "react"
 import {Locale} from "@/i18n/types"
-import {createContext, Dispatch, SetStateAction} from "react"
 
 interface LocaleContextProps {
 	setLocale: (locale: Locale) => void
 }
 
 export const LocaleContext = createContext<LocaleContextProps>({
-	setLocale: (locale: Locale) => {
-		throw new Error("No locale provider set")
+	setLocale: (_locale: Locale) => {
+		throw new Error("Function not implemented.")
 	}
 })

@@ -1,19 +1,15 @@
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-background: var(--gray-dark);
-		--color-fill: var(--gray);
-		--color-font: var(--white);
-		--color-font-opposite: var(--color-background);
-	}
+:root[data-theme="dark"] {
+	--color-background: var(--gray-dark);
+	--color-fill: var(--gray);
+	--color-font: var(--white);
+	--color-font-opposite: var(--color-background);
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--color-background: var(--white);
-		--color-fill: var(--gray-light);
-		--color-font: var(--black);
-		--color-font-opposite: var(--color-background);
-	}
+:root[data-theme="light"] {
+	--color-background: var(--white);
+	--color-fill: var(--gray-light);
+	--color-font: var(--black);
+	--color-font-opposite: var(--color-background);
 }
 
 /* Colors in both themes */

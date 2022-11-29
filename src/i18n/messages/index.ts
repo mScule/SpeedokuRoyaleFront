@@ -2,12 +2,12 @@ import Locale from "@/i18n/types/locale";
 
 import en from "./languages/en";
 import fi from "./languages/fi";
-import jp from "./languages/jp";
+import ja from "./languages/ja";
 
 const messages = {
   [Locale.English]: en,
   [Locale.Finnish]: fi,
-  [Locale.Japanese]: jp
+  [Locale.Japanese]: ja
 };
 
 export { messages };

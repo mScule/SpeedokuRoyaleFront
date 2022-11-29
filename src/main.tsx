@@ -6,10 +6,13 @@ import "@/design-system/theme.css"
 import "@/design-system/classes.css"
 import "./main.css"
 
+import {PreferenceProvider} from "./contexts/preference-context"
 import {App} from "@/app"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>
-		<App />
+		<PreferenceProvider>
+			<App />
+		</PreferenceProvider>
 	</React.StrictMode>
 )
