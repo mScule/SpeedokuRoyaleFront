@@ -9,6 +9,7 @@ import {ReactComponent as ThemeIcon} from "bootstrap-icons/icons/lightbulb.svg"
 import {ReactComponent as DarkThemeIcon} from "bootstrap-icons/icons/moon.svg"
 import {ReactComponent as LightThemeIcon} from "bootstrap-icons/icons/sun.svg"
 import {ReactComponent as TranslateIcon} from "bootstrap-icons/icons/translate.svg"
+import {SpeedokuLogo} from "@/components/speedoku-logo"
 
 import {Row} from "@/design-system/components/row"
 import {Icon} from "@/design-system/components/icon"
@@ -24,6 +25,7 @@ import {PreferenceContext} from "@/contexts/preference-context"
 import {Preference} from "@/types/preference"
 import {Theme} from "@/types/theme"
 import {IconButton} from "@/design-system/components/icon-button"
+import {Page} from "@/design-system/components/page"
 
 interface NavigateableProps {
 	children: ReactNode
@@ -45,7 +47,11 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 
 	return (
 		<>
-			<NavBar className="nav-bar space-between">
+			<NavBar className="space-evenly padding-small">
+				<Row className="align-center">
+					<SpeedokuLogo />
+				</Row>
+				<Split size="small" orientation="vertical" />
 				<Row className="align-center">
 					<Icon caption="menu" size="medium">
 						<MenuIcon />
@@ -62,6 +68,7 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 						<Translate id="title-credits" />
 					</Link>
 				</Row>
+				<Split size="small" orientation="vertical" />
 				<Row className="align-center">
 					<Icon caption="light theme" size="medium">
 						<ThemeIcon />
@@ -73,6 +80,9 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 					<IconButton slim size="medium" onClick={setDark}>
 						<DarkThemeIcon />
 					</IconButton>
+				</Row>
+				<Split size="small" orientation="vertical" />
+				<Row className="align-center">
 					<Icon caption="translate" size="medium">
 						<TranslateIcon />
 					</Icon>
@@ -83,11 +93,13 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 					<TextButton onClick={setJapanese}>{Locale.Japanese}</TextButton>
 				</Row>
 			</NavBar>
-			<Section
-				className={classList(["border-radius-medium", "padding-small"])}
-				title={title}>
-				{children}
-			</Section>
+			<Page>
+				<Section
+					className={classList(["border-radius-medium", "padding-small"])}
+					title={title}>
+					{children}
+				</Section>
+			</Page>
 		</>
 	)
 }

@@ -7,7 +7,6 @@ import {Locale} from "@/i18n/types"
 import {LocaleContext} from "@/contexts/locale-context"
 import {PreferenceContext} from "@/contexts/preference-context"
 
-import {Page} from "@/design-system/components/page"
 import {About} from "@/pages/about"
 import {Play} from "@/pages/play"
 import {Credits} from "@/pages/credits"
@@ -64,9 +63,7 @@ export const App: FC = () => {
 					setLocale: (locale: Locale) =>
 						preferences[Preference.Locale].set(locale)
 				}}>
-				<Page title="Speedoku Royale">
-					<RouterProvider router={router} />
-				</Page>
+				<RouterProvider router={router} />
 			</LocaleContext.Provider>
 		</I18nProvider>
 	)
