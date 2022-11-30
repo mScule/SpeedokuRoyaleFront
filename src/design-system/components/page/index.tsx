@@ -4,7 +4,7 @@ import {Main} from "@/design-system/components/main"
 import "./page.css"
 
 interface PageProps {
-	title: string
+	title?: string
 	children: ReactNode
 }
 

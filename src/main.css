@@ -4,7 +4,11 @@
 	font-family: var(--font-main);
 }
 
-:root button {
+body {
+	margin: 0;
+}
+
+button {
 	font-family: var(--font-main);
 	cursor: pointer;
 }

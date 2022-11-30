@@ -1,0 +1,7 @@
+.nav-bar {
+  margin: 0;
+  border-bottom: solid var(--fatness-small) var(--color-fill);
+  padding: 0;
+  padding-top: var(--buffer-small);
+  padding-bottom: var(--buffer-small);
+}
