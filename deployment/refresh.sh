@@ -1,3 +1,6 @@
+# Go to the dockerfile directory
+cd ..
+
 # Deleting pre-existing docker container
 docker stop sp-front-instance
 docker container rm --volumes sp-front-instance
