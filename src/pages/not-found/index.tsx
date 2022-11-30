@@ -1,6 +1,6 @@
 import {FC} from "react"
 import {Link} from "react-router-dom"
-import {Article} from "@/design-system/components/article"
+import {Article} from "@/design/components/article"
 import {Translate, useTranslate} from "@/i18n"
 
 export const NotFound: FC = () => {

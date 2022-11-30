@@ -1,8 +1,3 @@
-# Building the app
-cd ..
-yarn install
-yarn build
-
 # Deleting pre-existing docker container
 docker stop sp-front-instance
 docker container rm --volumes sp-front-instance
