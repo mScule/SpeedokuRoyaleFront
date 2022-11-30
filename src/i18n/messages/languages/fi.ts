@@ -8,7 +8,7 @@ const fi: Messages = {
 	"title-about": "Pelistä",
 
 	"title-speedoku-royale": "Mistä Speedoky Royale:ssa on kyse?",
-	"article-speedoku-royale": "Artikkeli Speedoku Royalesta tähän...",
+	"article-speedoku-royale": "Artikkeli Speedoku Royalesta tähän... BLA",
 
 	"title-how-to-play": "Miten pelata?",
 	"article-how-to-play": "Artikkeli siitä miten pelata tähän...",
