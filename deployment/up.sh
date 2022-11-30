@@ -1,6 +1,7 @@
 # Building the app
 cd ..
 yarn install
+yarn test
 yarn build
 
 # Building new image and running container

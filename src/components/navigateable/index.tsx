@@ -2,7 +2,7 @@ import {FC, ReactNode, useContext} from "react"
 import {Link} from "react-router-dom"
 
 import "./nav-bar.css"
-import {classList} from "@/design-system/utils/class-list"
+import {classList} from "@/design/utils/class-list"
 
 import {ReactComponent as MenuIcon} from "bootstrap-icons/icons/hash.svg"
 import {ReactComponent as ThemeIcon} from "bootstrap-icons/icons/lightbulb.svg"
@@ -11,12 +11,12 @@ import {ReactComponent as LightThemeIcon} from "bootstrap-icons/icons/sun.svg"
 import {ReactComponent as TranslateIcon} from "bootstrap-icons/icons/translate.svg"
 import {SpeedokuLogo} from "@/components/speedoku-logo"
 
-import {Row} from "@/design-system/components/row"
-import {Icon} from "@/design-system/components/icon"
-import {Split} from "@/design-system/components/split"
-import {NavBar} from "@/design-system/components/nav-bar"
-import {Section} from "@/design-system/components/section"
-import {TextButton} from "@/design-system/components/text-button"
+import {Row} from "@/design/components/row"
+import {Icon} from "@/design/components/icon"
+import {Split} from "@/design/components/split"
+import {NavBar} from "@/design/components/nav-bar"
+import {Section} from "@/design/components/section"
+import {TextButton} from "@/design/components/text-button"
 
 import {Locale} from "@/i18n/types"
 import {Translate} from "@/i18n"
@@ -24,8 +24,8 @@ import {Translate} from "@/i18n"
 import {PreferenceContext} from "@/contexts/preference-context"
 import {Preference} from "@/types/preference"
 import {Theme} from "@/types/theme"
-import {IconButton} from "@/design-system/components/icon-button"
-import {Page} from "@/design-system/components/page"
+import {IconButton} from "@/design/components/icon-button"
+import {Page} from "@/design/components/page"
 
 interface NavigateableProps {
 	children: ReactNode
