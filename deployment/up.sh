@@ -1,5 +1,7 @@
-# Building the app
+# Go to the dockerfile directory
 cd ..
+
+# Building the app
 yarn install
 yarn test
 yarn build
