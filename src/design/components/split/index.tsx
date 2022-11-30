@@ -1,5 +1,5 @@
-import {classList} from "@/design/utils/class-list"
 import {FC} from "react"
+import {classes} from "@/design/utils/classes"
 import "./split.css"
 
 interface SplitProps {
@@ -9,10 +9,10 @@ interface SplitProps {
 
 export const Split: FC<SplitProps> = ({size, orientation}) => (
 	<div
-		className={classList([
+		{...classes(
 			"split",
 			`border-${size}`,
 			`border-radius-${size}`,
 			orientation
-		])}></div>
+		)}></div>
 )

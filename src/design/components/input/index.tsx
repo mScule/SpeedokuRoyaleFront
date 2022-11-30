@@ -1,6 +1,6 @@
+import {classes} from "@/design/utils/classes"
 import {FC, HTMLProps} from "react"
 import "./input.css"
-import {classList} from "@/design/utils/class-list"
 
 interface InputProps extends HTMLProps<HTMLInputElement> {
 	id: string
@@ -16,11 +16,11 @@ export const Input: FC<InputProps> = ({
 	const inputElement = (
 		<input
 			id={id}
-			className={classList([
+			{...classes(
 				"border-small",
 				"padding-small",
 				type === "button" || type === "submit" ? "fill-clickable" : undefined
-			])}
+			)}
 			type={type}
 			{...props}
 		/>

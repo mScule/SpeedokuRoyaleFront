@@ -2,7 +2,7 @@ import {FC, ReactNode, useContext} from "react"
 import {Link} from "react-router-dom"
 
 import "./nav-bar.css"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 
 import {ReactComponent as MenuIcon} from "bootstrap-icons/icons/hash.svg"
 import {ReactComponent as ThemeIcon} from "bootstrap-icons/icons/lightbulb.svg"
@@ -47,55 +47,83 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 
 	return (
 		<>
-			<NavBar className="space-evenly padding-small">
+			<NavBar {...classes("space-evenly", "padding-small")}>
 				<Row className="align-center">
 					<SpeedokuLogo />
 				</Row>
+
 				<Split size="small" orientation="vertical" />
-				<Row className="align-center">
+
+				<Row {...classes("medium", "align-center")}>
 					<Icon caption="menu" size="medium">
 						<MenuIcon />
 					</Icon>
-					<Link to="/">
+
+					<Link {...classes("uppercase", "nowrap")} to="/">
 						<Translate id="title-about" />
 					</Link>
-					<Split size="medium" orientation="vertical" />
-					<Link to="/play">
+
+					<Split size="small" orientation="vertical" />
+
+					<Link {...classes("uppercase", "nowrap")} to="/play">
 						<Translate id="title-play" />
 					</Link>
-					<Split size="medium" orientation="vertical" />
-					<Link to="/credits">
+
+					<Split size="small" orientation="vertical" />
+
+					<Link {...classes("uppercase", "nowrap")} to="/credits">
 						<Translate id="title-credits" />
 					</Link>
 				</Row>
+
 				<Split size="small" orientation="vertical" />
-				<Row className="align-center">
+
+				<Row {...classes("medium", "align-center", "padding-small")}>
 					<Icon caption="light theme" size="medium">
 						<ThemeIcon />
 					</Icon>
+
+					<Split size="small" orientation="vertical" />
+
 					<IconButton slim size="medium" onClick={setLight}>
 						<LightThemeIcon />
 					</IconButton>
-					<Split size="medium" orientation="vertical" />
+
+					<Split size="small" orientation="vertical" />
+
 					<IconButton slim size="medium" onClick={setDark}>
 						<DarkThemeIcon />
 					</IconButton>
 				</Row>
+
 				<Split size="small" orientation="vertical" />
-				<Row className="align-center">
+
+				<Row {...classes("medium", "align-center", "padding-small")}>
 					<Icon caption="translate" size="medium">
 						<TranslateIcon />
 					</Icon>
-					<TextButton onClick={setEnglish}>{Locale.English}</TextButton>
-					<Split size="medium" orientation="vertical" />
-					<TextButton onClick={setFinnish}>{Locale.Finnish}</TextButton>
-					<Split size="medium" orientation="vertical" />
-					<TextButton onClick={setJapanese}>{Locale.Japanese}</TextButton>
+
+					<TextButton className="uppercase" onClick={setEnglish}>
+						{Locale.English}
+					</TextButton>
+
+					<Split size="small" orientation="vertical" />
+
+					<TextButton className="uppercase" onClick={setFinnish}>
+						{Locale.Finnish}
+					</TextButton>
+
+					<Split size="small" orientation="vertical" />
+
+					<TextButton className="uppercase" onClick={setJapanese}>
+						{Locale.Japanese}
+					</TextButton>
 				</Row>
 			</NavBar>
+
 			<Page>
 				<Section
-					className={classList(["border-radius-medium", "padding-small"])}
+					{...classes("border-radius-medium", "padding-small")}
 					title={title}>
 					{children}
 				</Section>

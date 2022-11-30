@@ -2,9 +2,8 @@ import {FC, ButtonHTMLAttributes} from "react"
 import {Button} from "@/design/components/button"
 import {Row} from "@/design/components/row"
 
-import {classList} from "@/design/utils/class-list"
-
 import "./icon-button.css"
+import {classes} from "@/design/utils/classes"
 
 interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	title?: string
@@ -21,17 +20,12 @@ export const IconButton: FC<IconButtonProps> = ({
 	...props
 }) => (
 	<Button
-		className={classList([
-			className,
-			"icon-button",
-			slim ? "slim" : undefined,
-			size
-		])}
+		{...classes(className, "icon-button", slim ? "slim" : undefined, size)}
 		{...props}>
 		{slim ? (
 			children
 		) : (
-			<Row className="align-center width-fit space-center">
+			<Row {...classes("align-center", "width-fit", "space-center")}>
 				{title && <span>{title}</span>}
 				<>{children}</>
 			</Row>

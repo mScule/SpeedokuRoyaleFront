@@ -3,5 +3,5 @@ export const classes = (...classes: (string | undefined | null)[]) => {
 	classes.forEach(
 		c => (classString += c === undefined || c === null ? "" : c + " ")
 	)
-	return classString.trim()
+	return {className: classString.trim()}
 }
