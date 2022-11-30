@@ -1,5 +1,5 @@
 import {FC, HTMLProps} from "react"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 import "./row.css"
 
 export const Row: FC<HTMLProps<HTMLDivElement>> = ({
@@ -7,7 +7,7 @@ export const Row: FC<HTMLProps<HTMLDivElement>> = ({
 	children,
 	...props
 }) => (
-	<div className={classList(["row", className])} {...props}>
+	<div {...classes("row", className)} {...props}>
 		{children}
 	</div>
 )

@@ -9,7 +9,7 @@ import {
 	ReactNode
 } from "react"
 import {Row} from "../row"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 
 const HeadingDepthContext: Context<HeadingDepthContextProps> =
 	createContext<HeadingDepthContextProps>({depth: 1})
@@ -63,10 +63,7 @@ export const Titled: FC<TitledProps> = ({
 	return (
 		<>
 			{titleRow ? (
-				<Row
-					className={classList([
-						titleRowClassName ? titleRowClassName : undefined
-					])}>
+				<Row {...classes(titleRowClassName ? titleRowClassName : undefined)}>
 					{headingElement}
 					{headingDepthProvider(titleRow)}
 				</Row>

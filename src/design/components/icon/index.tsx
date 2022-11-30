@@ -1,5 +1,5 @@
 import {FC, ReactNode} from "react"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 import "./icon.css"
 
 interface IconProps {
@@ -9,10 +9,7 @@ interface IconProps {
 }
 
 export const Icon: FC<IconProps> = ({caption, size, children}) => (
-	<figure
-		className={classList(["icon", size])}
-		role="icon"
-		aria-label={caption}>
+	<figure {...classes("icon", size)} role="icon" aria-label={caption}>
 		{children}
 	</figure>
 )

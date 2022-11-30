@@ -3,8 +3,16 @@
 	flex-direction: row;
 }
 
-.row > * {
+.row > *, .row.small > * {
 	margin-right: var(--buffer-small) !important;
+}
+
+.row.medium > * {
+	margin-right: var(--buffer-medium) !important;
+}
+
+.row.large > * {
+	margin-right: var(--buffer-large) !important;
 }
 
 .row > *:last-child {

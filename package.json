@@ -31,6 +31,7 @@
     "react-dom": "^18.2.0",
     "react-intl": "^6.2.2",
     "react-router-dom": "^6.4.3",
+    "react-unity-webgl": "^9.3.0",
     "vite-plugin-svgr": "^2.2.2"
   },
   "devDependencies": {

@@ -18,5 +18,5 @@
 	--color-success: var(--green);
 	--color-warning: var(--yellow);
 	--color-danger: var(--red);
-	--color-link: var(--blue);
+	--color-link: var(--color-font);
 }

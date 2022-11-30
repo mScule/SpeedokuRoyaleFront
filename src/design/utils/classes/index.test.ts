@@ -2,12 +2,12 @@ import {classes} from "./index"
 
 test("classes()", () => {
 	const styleClasses: string = classes(
-		"box",
 		"small",
 		null,
 		"green",
-		undefined
-	)
+		undefined,
+		"box"
+	).className
 
-	expect(styleClasses).toEqual("box small green")
+	expect(styleClasses).toEqual("small green box")
 })

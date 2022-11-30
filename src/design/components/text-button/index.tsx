@@ -1,5 +1,5 @@
 import {FC, ButtonHTMLAttributes} from "react"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 import "./text-button.css"
 
 export const TextButton: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
@@ -7,7 +7,7 @@ export const TextButton: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
 	children,
 	...props
 }) => (
-	<button className={classList(["text-button", className])} {...props}>
+	<button {...classes("text-button", className)} {...props}>
 		{children}
 	</button>
 )

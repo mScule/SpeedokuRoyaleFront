@@ -1,6 +1,6 @@
 import {FC, HTMLProps, ReactNode, createElement} from "react"
 import {Titled, TitledComponent} from "@/design/components/titled"
-import {classList} from "@/design/utils/class-list"
+import {classes} from "@/design/utils/classes"
 
 import "./zone.css"
 
@@ -27,11 +27,11 @@ export const Zone: FC<ZoneProps<any>> = ({
 }): JSX.Element =>
 	createElement(
 		tag,
-		{className: classList(["zone", className]), ...props},
+		{...classes("zone", className), ...props},
 		title ? (
 			<Titled
 				title={title}
-				titleRowClassName={classList(["zone", titleRowClassName])}
+				titleRowClassName={classes("zone", titleRowClassName).className}
 				titleRow={titleRow}>
 				{children}
 			</Titled>
