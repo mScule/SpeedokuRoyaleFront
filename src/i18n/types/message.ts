@@ -13,6 +13,7 @@ export default interface Message {
 
 	// Play
 	"title-play": string
+	"loading": string
 
 	// Credits
 	"title-credits": string

@@ -15,6 +15,7 @@ const fi: Messages = {
 
 	// Play
 	"title-play": "Pelaa",
+	"loading": "Ladataan",
 
 	// Credits
 	"title-credits": "Tekijät",

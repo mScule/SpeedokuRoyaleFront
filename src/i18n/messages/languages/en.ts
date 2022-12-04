@@ -15,6 +15,7 @@ const en: Messages = {
 
 	// Play
 	"title-play": "Play",
+	"loading": "Loading",
 
 	// Credits
 	"title-credits": "Credits",
