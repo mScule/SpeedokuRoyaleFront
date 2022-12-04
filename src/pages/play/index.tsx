@@ -1,26 +1,33 @@
 import {FC} from "react"
 import {Navigateable} from "@/components/navigateable"
-import {useTranslate} from "@/i18n"
-import {classes} from "@/design/utils/classes"
+import {useTranslate, Translate} from "@/i18n"
 import {Unity, useUnityContext} from "react-unity-webgl"
-import {Section} from "@/design/components/section"
 
 export const Play: FC = () => {
 	const translate = useTranslate()
-	const {unityProvider} = useUnityContext({
-		loaderUrl: "/game-build/Build/sr-d-build.loader.js",
-		dataUrl: "/game-build/Build/sr-d-build.data.gz",
-		frameworkUrl: "/game-build/Build/sr-d-build.framework.js.gz",
-		codeUrl: "/game-build/Build/sr-d-build.wasm.gz"
+	const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
+		loaderUrl: "/sr-d-build/Build/sr-d-build.loader.js",
+		dataUrl: "/sr-d-build/Build/sr-d-build.data.gz",
+		frameworkUrl: "/sr-d-build/Build/sr-d-build.framework.js.gz",
+		codeUrl: "/sr-d-build/Build/sr-d-build.wasm.gz"
 	})
 	return (
 		<Navigateable title={translate("title-play")}>
-			{/*<Unity unityProvider={unityProvider} />*/}
-			<Section
-				title="Construction site!"
-				{...classes("warning", "uppercase", "border-medium", "padding-small")}>
-				<p>Game goes here</p>
-			</Section>
+			{!isLoaded && (
+				<p>
+					<Translate id="loading" />
+					... {Math.round(loadingProgression * 100)}%
+				</p>
+			)}
+			<Unity
+				unityProvider={unityProvider}
+				style={{
+					visibility: isLoaded ? "visible" : "hidden",
+					width: "100%",
+					height: "auto",
+					borderRadius: "var(--roundness-small)"
+				}}
+			/>
 		</Navigateable>
 	)
 }

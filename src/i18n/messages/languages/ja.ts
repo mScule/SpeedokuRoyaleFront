@@ -15,6 +15,7 @@ const ja: Messages = {
 
 	// Play
 	"title-play": "JA title-play",
+	"loading": "JA loading",
 
 	// Credits
 	"title-credits": "JA title-credits",
