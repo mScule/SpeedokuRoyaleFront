@@ -6,10 +6,10 @@ import {Unity, useUnityContext} from "react-unity-webgl"
 export const Play: FC = () => {
 	const translate = useTranslate()
 	const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
-		loaderUrl: "/sr-d-build/Build/sr-d-build.loader.js",
-		dataUrl: "/sr-d-build/Build/sr-d-build.data.gz",
-		frameworkUrl: "/sr-d-build/Build/sr-d-build.framework.js.gz",
-		codeUrl: "/sr-d-build/Build/sr-d-build.wasm.gz"
+		loaderUrl:    "/sr-webgl/Build/sr-webgl.loader.js",
+		dataUrl:      "/sr-webgl/Build/sr-webgl.data",
+		frameworkUrl: "/sr-webgl/Build/sr-webgl.framework.js",
+		codeUrl:      "/sr-webgl/Build/sr-webgl.wasm"
 	})
 	return (
 		<Navigateable title={translate("title-play")}>
