@@ -1,6 +1,6 @@
 FROM nginx:latest
 
 COPY ./dist /usr/share/nginx/html
-COPY \
+ADD \
   /var/lib/jenkins/workspace/UnityProject/Builds/SpeedokuRoyaleWebGL \
   /usr/share/nginx/html/SpeedokuRoyaleWebGL
