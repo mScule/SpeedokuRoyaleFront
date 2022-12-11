@@ -1,29 +1,33 @@
 import {FC} from "react"
 import {Navigateable} from "@/components/navigateable"
-import {useTranslate, Translate} from "@/i18n"
+import {useTranslate} from "@/i18n"
 import {Unity, useUnityContext} from "react-unity-webgl"
+
+console.log("PATH TO LOADER:", import.meta.env.VITE_UNITY_LOADER_URL)
 
 export const Play: FC = () => {
 	const translate = useTranslate()
 	const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
-		loaderUrl:    "/sr-webgl/Build/sr-webgl.loader.js",
-		dataUrl:      "/sr-webgl/Build/sr-webgl.data",
-		frameworkUrl: "/sr-webgl/Build/sr-webgl.framework.js",
-		codeUrl:      "/sr-webgl/Build/sr-webgl.wasm"
+		loaderUrl:    import.meta.env.VITE_UNITY_LOADER_URL,
+		dataUrl:      import.meta.env.VITE_UNITY_DATA_URL,
+		frameworkUrl: import.meta.env.VITE_UNITY_FRAMEWORK_URL,
+		codeUrl:      import.meta.env.VITE_UNITY_CODE_URL
 	})
 	return (
 		<Navigateable title={translate("title-play")}>
 			{!isLoaded && (
 				<p>
-					<Translate id="loading" />
-					... {Math.round(loadingProgression * 100)}%
+					{
+						`${translate("loading")} ... ` +
+						`${Math.round(loadingProgression * 100)}%`
+					}
 				</p>
 			)}
 			<Unity
 				unityProvider={unityProvider}
 				style={{
 					visibility: isLoaded ? "visible" : "hidden",
-					width: "100%",
+					width:  "100%",
 					height: "auto",
 					borderRadius: "var(--roundness-small)"
 				}}
