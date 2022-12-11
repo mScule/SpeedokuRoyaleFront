@@ -83,8 +83,6 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 						<ThemeIcon />
 					</Icon>
 
-					<Split size="small" orientation="vertical" />
-
 					<IconButton slim size="medium" onClick={setLight}>
 						<LightThemeIcon />
 					</IconButton>
