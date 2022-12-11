@@ -104,19 +104,19 @@ export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 					</Icon>
 
 					<TextButton className="uppercase" onClick={setEnglish}>
-						{Locale.English}
+						English
 					</TextButton>
 
 					<Split size="small" orientation="vertical" />
 
 					<TextButton className="uppercase" onClick={setFinnish}>
-						{Locale.Finnish}
+						Suomi
 					</TextButton>
 
 					<Split size="small" orientation="vertical" />
 
 					<TextButton className="uppercase" onClick={setJapanese}>
-						{Locale.Japanese}
+						日本語
 					</TextButton>
 				</Row>
 			</NavBar>
