@@ -1,0 +1,9 @@
+.speedoku-royale {
+	width: var(--page-max-width);
+	height: calc(600px + 48px + 10px);
+	border: none;
+	overflow: hidden;
+	background-color: var(--white);
+	border-radius: var(--roundness-medium);
+	filter: drop-shadow(0px 2px 0px var(--color-fill));
+}

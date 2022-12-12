@@ -9,9 +9,9 @@
   --white:      snow;
 
   --red:    lightcoral;
-  --yellow: gold;
+  --yellow: #f9dd76;
   --green:  lightgreen;
-  --blue:   #008eff;
+  --blue:   #98fcfd;
   --violet: violet;
 
   /* Font */
@@ -38,6 +38,6 @@
   --icon-large:  30px;
 
   /* Page */
-  --page-max-width: 40rem;
+  --page-max-width: calc(960px + 16px);
   --page-min-width: 8rem;
 }
