@@ -25,6 +25,12 @@ const initFeatures = <T,>(): PreferenceFeatures<T> => ({
 	}
 })
 
+/**
+ * Context for user preferences that are being saved to the local storage when
+ * user updates them.
+ *
+ * @author Vilhelm
+ */
 export const PreferenceContext = createContext<PreferenceContextProps>({
 	[Preference.Locale]: initFeatures<Locale>(),
 	[Preference.Theme]: initFeatures<Theme>()
@@ -45,6 +51,11 @@ const getLocalStorage = <T,>(preference: Preference, defaultValue: T) => {
 const usePreference = <T,>(preference: Preference, defaultValue: T) =>
 	useState<T>(getLocalStorage<T>(preference, defaultValue))
 
+/**
+ * Context provider for the Preference context.
+ *
+ * @author Vilhelm
+ */
 export const PreferenceProvider: FC<PreferenceProviderProps> = ({
 	children
 }) => {

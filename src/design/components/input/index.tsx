@@ -7,6 +7,12 @@ interface InputProps extends HTMLProps<HTMLInputElement> {
 	label?: string
 }
 
+/**
+ * Component that combines the input, and label elements for ease of use, and
+ * so they follow the design system.
+ *
+ * @author Vilhelm
+ */
 export const Input: FC<InputProps> = ({
 	id,
 	label,

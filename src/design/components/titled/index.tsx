@@ -35,6 +35,13 @@ export interface TitledProps
 	titleRowClassName?: string
 }
 
+/**
+ * Component for something that is titled. Makes sure that the heading depth is
+ * always in the correct order. Even when parent is removed every children
+ * heading will be updated.
+ *
+ * @author Vilhelm
+ */
 export const Titled: FC<TitledProps> = ({
 	title,
 	children,

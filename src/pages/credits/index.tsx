@@ -2,6 +2,11 @@ import {FC} from "react"
 import {Navigateable} from "@/components/navigateable"
 import {useTranslate} from "@/i18n"
 
+/**
+ * Component holding the contents of Credits page.
+ *
+ * @author Vilhelm
+ */
 export const Credits: FC = () => {
 	const translate = useTranslate()
 

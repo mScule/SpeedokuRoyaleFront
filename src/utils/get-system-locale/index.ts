@@ -1,6 +1,12 @@
 import {Locale} from "@/i18n/types"
 import {isStringEnumEntry} from "../is-string-enum-entry"
 
+/**
+ * Gets the locale that is selected in the users browser, and goes through it
+ * until it finds some language from the supported locales.
+ *
+ * @author Vilhelm
+ */
 export const getSystemLocale = (): Locale => {
 	const systemLocales: readonly string[] = navigator.languages
 

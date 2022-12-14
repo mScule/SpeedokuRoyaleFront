@@ -15,6 +15,13 @@ interface ZoneProps<T> extends HTMLProps<T> {
 	titleRowClassName?: string
 }
 
+/**
+ * Generic zone that should contain something and something that can be labeled
+ * with a title if needed. Makes use of the Titled component. Base component for
+ * every other "contentful" semantic component.
+ *
+ * @author Vilhelm
+ */
 export const Zone: FC<ZoneProps<any>> = ({
 	tag,
 	title,

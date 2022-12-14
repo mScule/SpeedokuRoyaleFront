@@ -1,3 +1,7 @@
+/**
+ * The entry point for React.
+ */
+
 import React from "react"
 import ReactDOM from "react-dom/client"
 

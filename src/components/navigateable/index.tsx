@@ -32,6 +32,12 @@ interface NavigateableProps {
 	title: string
 }
 
+/**
+ * Component that makes the navbar appear on the screen. It makes everything
+ * else appear below it with margin that makes the page content centered.
+ *
+ * @author Vilhelm
+ */
 export const Navigateable: FC<NavigateableProps> = ({title, children}) => {
 	const preferences = useContext(PreferenceContext)
 

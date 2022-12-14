@@ -29,6 +29,14 @@ const router = createBrowserRouter([
 	}
 ])
 
+/**
+ * The entry point for the Speedoku Royale web frontend itself.
+ * Contains definitions for routing, preference context, and contexts for
+ * localization.
+ *
+ * @author Vilhelm
+ */
+
 export const App: FC = () => {
 	const preferences = useContext(PreferenceContext)
 
