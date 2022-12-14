@@ -7,6 +7,11 @@ interface SplitProps {
 	orientation: "vertical" | "horizontal"
 }
 
+/**
+ * Adds a vertical line, or a horizontal line separator.
+ *
+ * @author Vilhelm
+ */
 export const Split: FC<SplitProps> = ({size, orientation}) => (
 	<div
 		{...classes(

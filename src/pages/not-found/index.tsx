@@ -4,6 +4,11 @@ import {Page} from "@/design/components/page"
 import {Article} from "@/design/components/article"
 import {Translate, useTranslate} from "@/i18n"
 
+/**
+ * Component holding the contents of NotFound page.
+ *
+ * @author Vilhelm
+ */
 export const NotFound: FC = () => {
 	const translate = useTranslate()
 

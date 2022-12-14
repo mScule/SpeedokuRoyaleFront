@@ -1,3 +1,7 @@
+/*
+ * Main classes for the design system.
+ */
+
 .margin-small {
 	margin: var(--buffer-small);
 }

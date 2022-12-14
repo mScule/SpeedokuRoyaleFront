@@ -3,6 +3,11 @@ import {Navigateable} from "@/components/navigateable"
 import {Article} from "@/design/components/article"
 import {Translate, useTranslate} from "@/i18n"
 
+/**
+ * Component holding the contents of About page.
+ *
+ * @author Vilhelm
+ */
 export const About: FC = () => {
 	const translate = useTranslate()
 

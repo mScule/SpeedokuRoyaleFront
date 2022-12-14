@@ -1,9 +1,13 @@
 import {FC} from "react"
 import {Navigateable} from "@/components/navigateable"
 import {useTranslate} from "@/i18n"
-import {classes} from "@/design/utils/classes"
 import "./style.css"
 
+/**
+ * Component holding the contents of the page that contains the game itself.
+ *
+ * @author Vilhelm
+ */
 export const Play: FC = () => {
 	const translate = useTranslate()
 

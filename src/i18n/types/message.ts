@@ -1,3 +1,8 @@
+/**
+ * Message options.
+ *
+ * @author Vilhelm
+ */
 export default interface Message {
 	// Speedoku royale
 	"speedoku-royale": string

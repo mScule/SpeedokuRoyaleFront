@@ -1,5 +1,10 @@
 import Messages from "@/i18n/types/message"
 
+/**
+ * Translations for Finnish.
+ *
+ * @author Sylvester
+ */
 const fi: Messages = {
 	// Speedoku royale
 	"speedoku-royale": "Speedoku Royale",

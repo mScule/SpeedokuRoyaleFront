@@ -1,3 +1,10 @@
+/*
+ * Config for the light and dark theme.
+ *
+ * USE ONLY VARIABLES DEFINED IN THE config.vss FILE
+ * OTHERWISE THE DESIGN SYSTEM WILL GET HARD TO MAINTAIN!
+ */
+
 :root[data-theme="dark"] {
 	--color-background: var(--gray-dark);
 	--color-fill: var(--gray);

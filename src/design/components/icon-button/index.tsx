@@ -11,6 +11,11 @@ interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	size: "small" | "medium" | "large"
 }
 
+/**
+ * Component where icon of choise is showed in so it follows the design system.
+ *
+ * @author Vilhelm
+ */
 export const IconButton: FC<IconButtonProps> = ({
 	title,
 	slim,

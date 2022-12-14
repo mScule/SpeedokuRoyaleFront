@@ -1,5 +1,10 @@
 import Messages from "@/i18n/types/message"
 
+/**
+ * Translations for Japanese
+ *
+ * @author Julia
+ */
 const ja: Messages = {
 	// Speedoku royale
 	"speedoku-royale": "スピードク　ロワイヤル",
