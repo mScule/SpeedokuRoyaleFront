@@ -2,6 +2,7 @@ import {FC} from "react"
 import {Navigateable} from "@/components/navigateable"
 import {Article} from "@/design/components/article"
 import {Translate, useTranslate} from "@/i18n"
+import { Link } from "react-router-dom"
 
 /**
  * Component holding the contents of About page.
@@ -22,6 +23,9 @@ export const About: FC = () => {
 				<p>
 					<Translate id="article-how-to-play" />
 				</p>
+			</Article>
+			<Article title={translate("title-links")}>
+				<Link to="docs"><Translate id="title-links" /></Link>
 			</Article>
 		</Navigateable>
 	)

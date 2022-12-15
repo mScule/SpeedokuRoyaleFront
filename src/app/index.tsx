@@ -10,6 +10,7 @@ import {PreferenceContext} from "@/contexts/preference-context"
 import {About} from "@/pages/about"
 import {Play} from "@/pages/play"
 import {Credits} from "@/pages/credits"
+import {Docs} from "@/pages/docs"
 import {NotFound} from "@/pages/not-found"
 import {Preference} from "@/types/preference"
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
 	{
 		path: "/credits",
 		element: <Credits />
+	},
+	{
+		path: "/docs",
+		element: <Docs />
 	}
 ])
 
