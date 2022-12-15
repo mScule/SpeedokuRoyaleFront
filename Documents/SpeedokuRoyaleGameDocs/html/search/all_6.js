@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['gameendmenu_0',['gameEndMenu',['../class_manage_game_session.html#a1879c0d0b3fb61c9a0e9651f922db90a',1,'ManageGameSession']]],
+  ['gamestates_2ecs_1',['GameStates.cs',['../_game_states_8cs.html',1,'']]],
+  ['generateremaining_2',['GenerateRemaining',['../class_sudoku.html#a1fd0d97ee85a0728a310cc76ea48a57b',1,'Sudoku']]],
+  ['generatesudoku_3',['GenerateSudoku',['../class_sudoku.html#abe8b0c38411c4cfb98de6e63ef91d55d',1,'Sudoku']]],
+  ['getandsetuserdata_4',['GetAndSetUserData',['../class_server_player_profiles.html#a167660274d1c688832fd533dd16635e4',1,'ServerPlayerProfiles']]],
+  ['getavailablegamerooms_5',['GetAvailableGameRooms',['../class_server_game_rooms.html#a750eb9f65bcf5d84d5c364884c1ebe72',1,'ServerGameRooms']]],
+  ['getelapsedtime_6',['GetElapsedTime',['../class_timer.html#aff63ea1a473a39c42e9e3fbb6006fbf2',1,'Timer']]],
+  ['getenumerator_7',['GetEnumerator',['../class_simple_j_s_o_n_1_1_j_s_o_n_string.html#a560bdd4a0ed0a1cb49595e4727544000',1,'SimpleJSON.JSONString.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_null.html#a22d73154221711bd3553d9abd2ae035b',1,'SimpleJSON.JSONNull.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_bool.html#aff23c00f6dab10f4c9f849d4989e4ec5',1,'SimpleJSON.JSONBool.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_number.html#a5ec239e6d22e9806cceaa3173138da3d',1,'SimpleJSON.JSONNumber.GetEnumerator()'],['../struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_value_enumerator.html#a18a8cb8612309a0f5caad8581fdfb210',1,'SimpleJSON.JSONNode.ValueEnumerator.GetEnumerator()'],['../struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_key_enumerator.html#a003923a2b44e86c42f7c874c5332b440',1,'SimpleJSON.JSONNode.KeyEnumerator.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_linq_enumerator.html#a8ea7b02ea7048478c6d597a902c52d77',1,'SimpleJSON.JSONNode.LinqEnumerator.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_node.html#aaf093073620d4f9bae652cfac32cbc15',1,'SimpleJSON.JSONNode.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_array.html#a8424a8fd5b83488f0c91f4cd76da3c21',1,'SimpleJSON.JSONArray.GetEnumerator()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_object.html#a7c98dae8c5126df0c1d2ab51140f7faa',1,'SimpleJSON.JSONObject.GetEnumerator()']]],
+  ['getgameroomstatus_8',['GetGameRoomStatus',['../class_server_game_rooms.html#af8548f387e32d7590c590662da6da40d',1,'ServerGameRooms']]],
+  ['gethashcode_9',['GetHashCode',['../class_simple_j_s_o_n_1_1_j_s_o_n_node.html#a97a4e4d2618feba0493ea30e1ea7f74b',1,'SimpleJSON.JSONNode.GetHashCode()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_string.html#ad0ab35d499706132576e6a19f88c0572',1,'SimpleJSON.JSONString.GetHashCode()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_number.html#a5b0c260d6c09bd10d61c23fdd36b0efa',1,'SimpleJSON.JSONNumber.GetHashCode()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_bool.html#a5d9524b759b39f2bafe1d24618b6db35',1,'SimpleJSON.JSONBool.GetHashCode()'],['../class_simple_j_s_o_n_1_1_j_s_o_n_null.html#ad4dffc65b04a2c206860a68b5151cb8c',1,'SimpleJSON.JSONNull.GetHashCode()']]],
+  ['gethighscores_10',['GetHighScores',['../class_score_manager.html#a54a4311a92fa2e17a26f8284ac4f2557',1,'ScoreManager']]],
+  ['gethighscoresbutton_11',['GetHighscoresButton',['../class_get_highscores_button.html',1,'']]],
+  ['gethighscoresbutton_2ecs_12',['GetHighscoresButton.cs',['../_get_highscores_button_8cs.html',1,'']]],
+  ['getleaderboardprofiles_13',['GetLeaderboardProfiles',['../class_server_player_profiles.html#aecfb8d59a317917c551613d7657f83a4',1,'ServerPlayerProfiles']]],
+  ['getone_14',['GetOne',['../class_sudoku.html#a7e63182ee15cbeb702d0a1925728f4ce',1,'Sudoku']]],
+  ['getpoints_15',['GetPoints',['../class_sudoku.html#a453a1da8882bb97cb257f8e29b9eb824',1,'Sudoku']]],
+  ['getscenename_16',['GetSceneName',['../class_manage_scenes.html#a11e349325b34c3d02470a0001ecbb961',1,'ManageScenes']]],
+  ['getscore_17',['GetScore',['../class_local_player.html#a6c44e7fd20b78ac8e705beca29ede9fd',1,'LocalPlayer']]],
+  ['getsudokunumber_18',['GetSudokuNumber',['../class_sudoku.html#a7293714e5b9e46c060f6412dfaf312ae',1,'Sudoku']]],
+  ['getwrong_19',['GetWrong',['../class_sudoku.html#aaf7882391ab37f534442ac12465beed4',1,'Sudoku']]],
+  ['givepoints_20',['GivePoints',['../class_give_points.html',1,'']]],
+  ['givepoints_2ecs_21',['GivePoints.cs',['../_give_points_8cs.html',1,'']]],
+  ['globalconstants_2ecs_22',['GlobalConstants.cs',['../_global_constants_8cs.html',1,'']]],
+  ['grids_23',['grids',['../class_sudoku.html#a4ccb805f5ca5971982f130a423563fa6',1,'Sudoku']]]
+];

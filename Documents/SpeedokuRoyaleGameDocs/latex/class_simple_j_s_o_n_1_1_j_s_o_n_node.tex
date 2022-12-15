@@ -1,0 +1,449 @@
+\hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node}{}\doxysection{Simple\+JSON.\+JSONNode Class Reference}
+\label{class_simple_j_s_o_n_1_1_j_s_o_n_node}\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+Inheritance diagram for Simple\+JSON.\+JSONNode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.078998cm]{class_simple_j_s_o_n_1_1_j_s_o_n_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_enumerator}{Enumerator}}
+\item 
+struct \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_key_enumerator}{Key\+Enumerator}}
+\item 
+class \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_linq_enumerator}{Linq\+Enumerator}}
+\item 
+struct \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_value_enumerator}{Value\+Enumerator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac50b24bfebca8d2d6ae3c4ac6d12afe6}{Add}} (string a\+Key, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} a\+Item)
+\item 
+virtual void \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_aad53be508d347581118aefec0fea5c0e}{Add}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} a\+Item)
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5dadbd4d866ee4cd87b2ec388e2fef19}{Remove}} (string a\+Key)
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae3def64bf1ebeaa35a1863adeaae2bfa}{Remove}} (int a\+Index)
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a3e9d1edd18d48652e73bdd8df0916ff8}{Remove}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} a\+Node)
+\item 
+override string \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a668c799e5973a2d9e0951d071b027f68}{To\+String}} ()
+\item 
+virtual string \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_abe7b2c0faad9db388fba24531f072001}{To\+String}} (int a\+Indent)
+\item 
+abstract \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_enumerator}{Enumerator}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_aaf093073620d4f9bae652cfac32cbc15}{Get\+Enumerator}} ()
+\item 
+override bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6748a3e48c993f7904cfb70a047fb18b}{Equals}} (object obj)
+\item 
+override int \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a97a4e4d2618feba0493ea30e1ea7f74b}{Get\+Hash\+Code}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_aeaf495a0bd9632ceca7375934d24b541}{operator JSONNode}} (string s)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a498348138d87b84eaacb795cc9727ac2}{operator string}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} d)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2481f6b35d7f8f0917aa8c9f383aef0b}{operator JSONNode}} (double n)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_acaf63acc9313f877308fbb80ce50fa1c}{operator double}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} d)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a15b45a287745b0070bdf40d8d66ecee8}{operator JSONNode}} (float n)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad96f121c11522f6869cb49e5453c9c87}{operator float}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} d)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a558af594a87bbea3f57bba65b14ff131}{operator JSONNode}} (int n)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1aa8c58e9230ad56005bdb9176b109f8}{operator int}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} d)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9484661cba83e1b8ea8a1b97d8006496}{operator JSONNode}} (bool b)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a8c1adc2153f3bfc6158f823e50ab3c4d}{operator bool}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} d)
+\item 
+static implicit \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e4d1b859f923aa72d95a52788e09419}{operator JSONNode}} (Key\+Value\+Pair$<$ string, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} $>$ a\+Key\+Value)
+\item 
+static bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6103dd81602c40f06a33895b669d2195}{operator==}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} a, object b)
+\item 
+static bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a804be147249a3e8689fd84842708fb48}{operator!=}} (\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} a, object b)
+\item 
+static \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_af4f82de403afd2df381137972ded5981}{Parse}} (string a\+JSON)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_afdf2a8b0f6ad66ab7ff9d23dfe22d9cd}{force\+ASCII}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{namespace_simple_j_s_o_n_a62af00acc7925cc0284e634fb10626f5}{JSONNode\+Type}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ab35ec1bd3010ff781a62db66d7104a74}{Tag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a324dc650c3ee295d4dd4612a6ce4aa5c}{this\mbox{[}int a\+Index\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_aac9ed3d645601272f968ece96a5ff605}{this\mbox{[}string a\+Key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual string \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a20d19b7f45ad936d7f8a40e3c6852fe2}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual int \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d2bd5645578fcb66e5d0d78df8efc8c}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae828903f697940332193f01bf5b4f5a0}{Is\+Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a69574bf41a66d52106cd34007d4efb7a}{Is\+String}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a0b07e43cd23a0f8994209fec0b6a4ba1}{Is\+Boolean}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9a7b8c9b11af3ad9a15e79c5d6c9d3cd}{Is\+Null}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac70c413f178bd98e48b320494db49334}{Is\+Array}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d23f8cb3b4c7af0429910e69d114cd0}{Is\+Object}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5c26469b760151a6b01064b5e181908e}{Inline}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual IEnumerable$<$ \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} $>$ \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a657bbed677af18a80069c0b00cdfa175}{Children}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IEnumerable$<$ \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} $>$ \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_aa07d818a3cd25ec46e60b3ec29b8ddb8}{Deep\+Children}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IEnumerable$<$ Key\+Value\+Pair$<$ string, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} $>$ $>$ \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a48a8098eef6d86fce5520ec16f49c934}{Linq}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_key_enumerator}{Key\+Enumerator}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a81eba64175e309a73930e4cbef5c0415}{Keys}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_value_enumerator}{Value\+Enumerator}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2aa2fd8fe02cf6a0ba83a34210a31f04}{Values}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual double \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad9364dff62c04c6fc46cc50981c44941}{As\+Double}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual int \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e771cb19c2928bcea2ad18f96021610}{As\+Int}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual float \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a78fd9e2a7fb6a99a4f9b106f793e7686}{As\+Float}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6bf6982e6220db3f9360a2fc3b53aa14}{As\+Bool}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array}{JSONArray}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5cabad97e7187a09ea7581f1cb30cb75}{As\+Array}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object}{JSONObject}} \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae77298ed6cea74259c6d3c35479a3f0c}{As\+Object}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_aad53be508d347581118aefec0fea5c0e}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_aad53be508d347581118aefec0fea5c0e}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Add@{Add}}
+\index{Add@{Add}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Simple\+JSON.\+JSONNode.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{a\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac50b24bfebca8d2d6ae3c4ac6d12afe6}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac50b24bfebca8d2d6ae3c4ac6d12afe6}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Add@{Add}}
+\index{Add@{Add}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Simple\+JSON.\+JSONNode.\+Add (\begin{DoxyParamCaption}\item[{string}]{a\+Key,  }\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{a\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array_a9192aa5b6319426c74de7a462f123cd7}{Simple\+JSON.\+JSONArray}}, and \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object_adb6e416049b90dc558c6c358d44437ae}{Simple\+JSON.\+JSONObject}}.
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6748a3e48c993f7904cfb70a047fb18b}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6748a3e48c993f7904cfb70a047fb18b}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Equals@{Equals}}
+\index{Equals@{Equals}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool Simple\+JSON.\+JSONNode.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_aaf093073620d4f9bae652cfac32cbc15}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_aaf093073620d4f9bae652cfac32cbc15}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_enumerator}{Enumerator}} Simple\+JSON.\+JSONNode.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array_a8424a8fd5b83488f0c91f4cd76da3c21}{Simple\+JSON.\+JSONArray}}, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object_a7c98dae8c5126df0c1d2ab51140f7faa}{Simple\+JSON.\+JSONObject}}, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_string_a560bdd4a0ed0a1cb49595e4727544000}{Simple\+JSON.\+JSONString}}, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_number_a5ec239e6d22e9806cceaa3173138da3d}{Simple\+JSON.\+JSONNumber}}, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_bool_aff23c00f6dab10f4c9f849d4989e4ec5}{Simple\+JSON.\+JSONBool}}, and \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_null_a22d73154221711bd3553d9abd2ae035b}{Simple\+JSON.\+JSONNull}}.
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a97a4e4d2618feba0493ea30e1ea7f74b}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a97a4e4d2618feba0493ea30e1ea7f74b}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Simple\+JSON.\+JSONNode.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a8c1adc2153f3bfc6158f823e50ab3c4d}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a8c1adc2153f3bfc6158f823e50ab3c4d}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_acaf63acc9313f877308fbb80ce50fa1c}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_acaf63acc9313f877308fbb80ce50fa1c}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator double@{operator double}}
+\index{operator double@{operator double}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator double()}{operator double()}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad96f121c11522f6869cb49e5453c9c87}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad96f121c11522f6869cb49e5453c9c87}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator float@{operator float}}
+\index{operator float@{operator float}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator float()}{operator float()}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1aa8c58e9230ad56005bdb9176b109f8}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1aa8c58e9230ad56005bdb9176b109f8}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator int@{operator int}}
+\index{operator int@{operator int}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator int()}{operator int()}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9484661cba83e1b8ea8a1b97d8006496}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9484661cba83e1b8ea8a1b97d8006496}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2481f6b35d7f8f0917aa8c9f383aef0b}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2481f6b35d7f8f0917aa8c9f383aef0b}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{double}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a15b45a287745b0070bdf40d8d66ecee8}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a15b45a287745b0070bdf40d8d66ecee8}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{float}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a558af594a87bbea3f57bba65b14ff131}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a558af594a87bbea3f57bba65b14ff131}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e4d1b859f923aa72d95a52788e09419}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e4d1b859f923aa72d95a52788e09419}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{Key\+Value\+Pair$<$ string, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} $>$}]{a\+Key\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_aeaf495a0bd9632ceca7375934d24b541}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_aeaf495a0bd9632ceca7375934d24b541}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator JSONNode@{operator JSONNode}}
+\index{operator JSONNode@{operator JSONNode}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator JSONNode()}{operator JSONNode()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a498348138d87b84eaacb795cc9727ac2}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a498348138d87b84eaacb795cc9727ac2}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator string@{operator string}}
+\index{operator string@{operator string}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily static implicit Simple\+JSON.\+JSONNode.\+operator string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a804be147249a3e8689fd84842708fb48}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a804be147249a3e8689fd84842708fb48}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Simple\+JSON.\+JSONNode.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{a,  }\item[{object}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6103dd81602c40f06a33895b669d2195}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6103dd81602c40f06a33895b669d2195}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!operator==@{operator==}}
+\index{operator==@{operator==}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Simple\+JSON.\+JSONNode.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{a,  }\item[{object}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_af4f82de403afd2df381137972ded5981}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_af4f82de403afd2df381137972ded5981}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Parse@{Parse}}
+\index{Parse@{Parse}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+Parse (\begin{DoxyParamCaption}\item[{string}]{a\+JSON }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae3def64bf1ebeaa35a1863adeaae2bfa}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae3def64bf1ebeaa35a1863adeaae2bfa}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Remove@{Remove}}
+\index{Remove@{Remove}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+Remove (\begin{DoxyParamCaption}\item[{int}]{a\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array_aed3b61a8962499ef06e555e434d7affc}{Simple\+JSON.\+JSONArray}}, and \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object_a4d1b339bf85e82baf2a143559ff5689a}{Simple\+JSON.\+JSONObject}}.
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a3e9d1edd18d48652e73bdd8df0916ff8}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a3e9d1edd18d48652e73bdd8df0916ff8}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Remove@{Remove}}
+\index{Remove@{Remove}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}}]{a\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array_a6e24a51eb5e1f70b2f615399141e291b}{Simple\+JSON.\+JSONArray}}, and \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object_a5fefce72acdb086a4859046ed0e38b06}{Simple\+JSON.\+JSONObject}}.
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5dadbd4d866ee4cd87b2ec388e2fef19}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5dadbd4d866ee4cd87b2ec388e2fef19}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Remove@{Remove}}
+\index{Remove@{Remove}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+Remove (\begin{DoxyParamCaption}\item[{string}]{a\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object_a4c282478102eff961df08212da11a8b9}{Simple\+JSON.\+JSONObject}}.
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a668c799e5973a2d9e0951d071b027f68}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a668c799e5973a2d9e0951d071b027f68}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!ToString@{ToString}}
+\index{ToString@{ToString}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override string Simple\+JSON.\+JSONNode.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_abe7b2c0faad9db388fba24531f072001}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_abe7b2c0faad9db388fba24531f072001}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!ToString@{ToString}}
+\index{ToString@{ToString}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual string Simple\+JSON.\+JSONNode.\+To\+String (\begin{DoxyParamCaption}\item[{int}]{a\+Indent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_afdf2a8b0f6ad66ab7ff9d23dfe22d9cd}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_afdf2a8b0f6ad66ab7ff9d23dfe22d9cd}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!forceASCII@{forceASCII}}
+\index{forceASCII@{forceASCII}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{forceASCII}{forceASCII}}
+{\footnotesize\ttfamily bool Simple\+JSON.\+JSONNode.\+force\+ASCII = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5cabad97e7187a09ea7581f1cb30cb75}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5cabad97e7187a09ea7581f1cb30cb75}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsArray@{AsArray}}
+\index{AsArray@{AsArray}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsArray}{AsArray}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_array}{JSONArray}} Simple\+JSON.\+JSONNode.\+As\+Array\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6bf6982e6220db3f9360a2fc3b53aa14}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a6bf6982e6220db3f9360a2fc3b53aa14}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsBool@{AsBool}}
+\index{AsBool@{AsBool}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsBool}{AsBool}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+As\+Bool\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad9364dff62c04c6fc46cc50981c44941}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ad9364dff62c04c6fc46cc50981c44941}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsDouble@{AsDouble}}
+\index{AsDouble@{AsDouble}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsDouble}{AsDouble}}
+{\footnotesize\ttfamily virtual double Simple\+JSON.\+JSONNode.\+As\+Double\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a78fd9e2a7fb6a99a4f9b106f793e7686}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a78fd9e2a7fb6a99a4f9b106f793e7686}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsFloat@{AsFloat}}
+\index{AsFloat@{AsFloat}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsFloat}{AsFloat}}
+{\footnotesize\ttfamily virtual float Simple\+JSON.\+JSONNode.\+As\+Float\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e771cb19c2928bcea2ad18f96021610}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a1e771cb19c2928bcea2ad18f96021610}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsInt@{AsInt}}
+\index{AsInt@{AsInt}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsInt}{AsInt}}
+{\footnotesize\ttfamily virtual int Simple\+JSON.\+JSONNode.\+As\+Int\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae77298ed6cea74259c6d3c35479a3f0c}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae77298ed6cea74259c6d3c35479a3f0c}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!AsObject@{AsObject}}
+\index{AsObject@{AsObject}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{AsObject}{AsObject}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_object}{JSONObject}} Simple\+JSON.\+JSONNode.\+As\+Object\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a657bbed677af18a80069c0b00cdfa175}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a657bbed677af18a80069c0b00cdfa175}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Children@{Children}}
+\index{Children@{Children}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Children}{Children}}
+{\footnotesize\ttfamily virtual IEnumerable$<$\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}$>$ Simple\+JSON.\+JSONNode.\+Children\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d2bd5645578fcb66e5d0d78df8efc8c}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d2bd5645578fcb66e5d0d78df8efc8c}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Count@{Count}}
+\index{Count@{Count}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily virtual int Simple\+JSON.\+JSONNode.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_aa07d818a3cd25ec46e60b3ec29b8ddb8}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_aa07d818a3cd25ec46e60b3ec29b8ddb8}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!DeepChildren@{DeepChildren}}
+\index{DeepChildren@{DeepChildren}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{DeepChildren}{DeepChildren}}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}$>$ Simple\+JSON.\+JSONNode.\+Deep\+Children\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5c26469b760151a6b01064b5e181908e}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a5c26469b760151a6b01064b5e181908e}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Inline@{Inline}}
+\index{Inline@{Inline}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Inline}{Inline}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Inline\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac70c413f178bd98e48b320494db49334}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ac70c413f178bd98e48b320494db49334}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsArray@{IsArray}}
+\index{IsArray@{IsArray}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsArray}{IsArray}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+Array\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a0b07e43cd23a0f8994209fec0b6a4ba1}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a0b07e43cd23a0f8994209fec0b6a4ba1}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsBoolean@{IsBoolean}}
+\index{IsBoolean@{IsBoolean}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsBoolean}{IsBoolean}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+Boolean\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9a7b8c9b11af3ad9a15e79c5d6c9d3cd}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a9a7b8c9b11af3ad9a15e79c5d6c9d3cd}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsNull}{IsNull}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+Null\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae828903f697940332193f01bf5b4f5a0}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ae828903f697940332193f01bf5b4f5a0}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsNumber@{IsNumber}}
+\index{IsNumber@{IsNumber}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsNumber}{IsNumber}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+Number\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d23f8cb3b4c7af0429910e69d114cd0}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a4d23f8cb3b4c7af0429910e69d114cd0}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsObject@{IsObject}}
+\index{IsObject@{IsObject}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsObject}{IsObject}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+Object\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a69574bf41a66d52106cd34007d4efb7a}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a69574bf41a66d52106cd34007d4efb7a}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!IsString@{IsString}}
+\index{IsString@{IsString}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{IsString}{IsString}}
+{\footnotesize\ttfamily virtual bool Simple\+JSON.\+JSONNode.\+Is\+String\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a81eba64175e309a73930e4cbef5c0415}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a81eba64175e309a73930e4cbef5c0415}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Keys@{Keys}}
+\index{Keys@{Keys}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_key_enumerator}{Key\+Enumerator}} Simple\+JSON.\+JSONNode.\+Keys\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a48a8098eef6d86fce5520ec16f49c934}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a48a8098eef6d86fce5520ec16f49c934}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Linq@{Linq}}
+\index{Linq@{Linq}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Linq}{Linq}}
+{\footnotesize\ttfamily IEnumerable$<$Key\+Value\+Pair$<$string, \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}}$>$ $>$ Simple\+JSON.\+JSONNode.\+Linq\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_ab35ec1bd3010ff781a62db66d7104a74}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_ab35ec1bd3010ff781a62db66d7104a74}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Tag@{Tag}}
+\index{Tag@{Tag}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Tag}{Tag}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{namespace_simple_j_s_o_n_a62af00acc7925cc0284e634fb10626f5}{JSONNode\+Type}} Simple\+JSON.\+JSONNode.\+Tag\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a324dc650c3ee295d4dd4612a6ce4aa5c}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a324dc650c3ee295d4dd4612a6ce4aa5c}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!this\mbox{[}int aIndex\mbox{]}@{this[int aIndex]}}
+\index{this\mbox{[}int aIndex\mbox{]}@{this[int aIndex]}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{this[int aIndex]}{this[int aIndex]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+this\mbox{[}int a\+Index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_aac9ed3d645601272f968ece96a5ff605}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_aac9ed3d645601272f968ece96a5ff605}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!this\mbox{[}string aKey\mbox{]}@{this[string aKey]}}
+\index{this\mbox{[}string aKey\mbox{]}@{this[string aKey]}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{this[string aKey]}{this[string aKey]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_simple_j_s_o_n_1_1_j_s_o_n_node}{JSONNode}} Simple\+JSON.\+JSONNode.\+this\mbox{[}string a\+Key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a20d19b7f45ad936d7f8a40e3c6852fe2}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a20d19b7f45ad936d7f8a40e3c6852fe2}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Value@{Value}}
+\index{Value@{Value}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily virtual string Simple\+JSON.\+JSONNode.\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2aa2fd8fe02cf6a0ba83a34210a31f04}\label{class_simple_j_s_o_n_1_1_j_s_o_n_node_a2aa2fd8fe02cf6a0ba83a34210a31f04}} 
+\index{SimpleJSON.JSONNode@{SimpleJSON.JSONNode}!Values@{Values}}
+\index{Values@{Values}!SimpleJSON.JSONNode@{SimpleJSON.JSONNode}}
+\doxysubsubsection{\texorpdfstring{Values}{Values}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simple_j_s_o_n_1_1_j_s_o_n_node_1_1_value_enumerator}{Value\+Enumerator}} Simple\+JSON.\+JSONNode.\+Values\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Projects/\+Speedoku\+Royale/\+Assets/\+Scripts/\+Utility/\mbox{\hyperlink{_simple_j_s_o_n_8cs}{Simple\+JSON.\+cs}}\end{DoxyCompactItemize}
