@@ -23,9 +23,9 @@ export default interface Message {
 	// Credits
 	"title-credits": string
 
-	// Links
-	"title-links": string
-	"article-links": string
+	// Docs
+	"title-docs": string
+	"article-docs": string
 	"link-unity-docs": string
 	"link-server-docs": string
 	"link-technical-docs": string

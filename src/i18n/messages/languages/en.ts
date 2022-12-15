@@ -48,8 +48,8 @@ const en: Messages = {
 	"title-credits": "Credits",
 
 	// Links
-	"title-links": "Docs",
-	"article-links": "Here are links to different project related documents.",
+	"title-docs": "Docs",
+	"article-docs": "Here are links to different project related documents.",
 	"link-unity-docs": "Unity documentation",
 	"link-server-docs": "Server documentation",
 	"link-technical-docs": "Technical documentation",

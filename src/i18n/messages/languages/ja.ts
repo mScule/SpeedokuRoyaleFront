@@ -33,8 +33,8 @@ const ja: Messages = {
 	"title-credits": "作者情報",
 
 	// Links
-	"title-links": "リンク",
-	"article-links": "プロジェクトに関するその他の情報",
+	"title-docs": "ドキュメント",
+	"article-docs": "プロジェクトに関するその他の情報",
 	"link-unity-docs": "Unity プロジェクトのドキュメント",
 	"link-server-docs": "サーバー バックエンドのドキュメント",
 	"link-technical-docs": "技術文書",
