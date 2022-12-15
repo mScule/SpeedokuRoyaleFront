@@ -1,0 +1,552 @@
+\hypertarget{class_sudoku}{}\doxysection{Sudoku Class Reference}
+\label{class_sudoku}\index{Sudoku@{Sudoku}}
+Inheritance diagram for Sudoku\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sudoku}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sudoku_a4d1ec39894ef8cae4888e9d390279206}{Initialize\+Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a4d1ec39894ef8cae4888e9d390279206}{Initialize\+Game()}} -\/metodilla alustetaan uusi sudoku taulu.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_ad1280c8ce51a1dfda27b0c066c808967}{Remove\+Digits}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_ad1280c8ce51a1dfda27b0c066c808967}{Remove\+Digits()}} -\/metodi poistaa K\+:n verran numeroita.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_aaf7882391ab37f534442ac12465beed4}{Get\+Wrong}} ()
+\item 
+int \mbox{\hyperlink{class_sudoku_a453a1da8882bb97cb257f8e29b9eb824}{Get\+Points}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a453a1da8882bb97cb257f8e29b9eb824}{Get\+Points()}} -\/integer palauttaa pelaajalle annettavien pisteiden määrän.  \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sudoku_a824cc6bda6693dc73add11774cf6e3a6}{Sudoku\+End}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a824cc6bda6693dc73add11774cf6e3a6}{Sudoku\+End()}} -\/metodi kutsutaan pelin lopuksi \mbox{\hyperlink{class_manage_game_session}{Manage\+Game\+Session}} -\/luokasta.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sudoku_ac29c826a45080e5ddfa4b84e744f7477}{N}} = 9
+\begin{DoxyCompactList}\small\item\em N on sudokun koko.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_a3e5eeff31296b5616e19f56324665b57}{K}} = 9
+\begin{DoxyCompactList}\small\item\em K on sudokusta puuttuvien numeroiden määrä.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_a9b486868883ccd595e747bf245be8f21}{SRN}}
+\begin{DoxyCompactList}\small\item\em SRN on neliöjuuri sudokun koosta.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sudoku_abe8b0c38411c4cfb98de6e63ef91d55d}{Generate\+Sudoku}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_abe8b0c38411c4cfb98de6e63ef91d55d}{Generate\+Sudoku()}} -\/metodilla generoidaan sudoku numerot kutsumalla metodeja.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}{Create\+Matrix}} (int row, int col)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}{Create\+Matrix(int row, int col)}} -\/metodi luo koon neliöjuuren verran numeroita matrixiin.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_a1fd0d97ee85a0728a310cc76ea48a57b}{Generate\+Remaining}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a1fd0d97ee85a0728a310cc76ea48a57b}{Generate\+Remaining(int i, int j)}} -\/metodi luo loput numerot.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a5082287d5dd59b3d88252b49ed18ee39}{Set\+Controls}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a5082287d5dd59b3d88252b49ed18ee39}{Set\+Controls()}} -\/metodi asettaa kontrollit.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a33b0db0c5eea46ddbcfb9391a876dfed}{Set\+Numbers}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a33b0db0c5eea46ddbcfb9391a876dfed}{Set\+Numbers()}} -\/metodi asettaa numerot tauluihin.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a001b3e5fe6747ba5d44d3e74ed021fea}{On\+Click\+\_\+\+Number}} (\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} sn)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a001b3e5fe6747ba5d44d3e74ed021fea}{On\+Click\+\_\+\+Number(\+Sudoku\+Number sn)}} -\/metodi toimii klikki kuuntelijana sudoku numeroille.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a410523430d408da261fef4ff7ff45640}{On\+Click\+\_\+\+Control}} (\mbox{\hyperlink{class_control_obj}{Control\+Obj}} cobj)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a410523430d408da261fef4ff7ff45640}{On\+Click\+\_\+\+Control(\+Control\+Obj cobj)}} -\/metodi toimii klikki kuuntelijana kontrolli nappuloille.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_a7c042907b7cfe719c06b7894b18393cf}{Safe\+Check}} (int i, int j, int num)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a7c042907b7cfe719c06b7894b18393cf}{Safe\+Check(int i, int j, int num)}} -\/boolean tarkistaa että numeron voi asettaa taulukkoon.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_ab6db54b0155c32c94dfb669d89f28590}{Not\+In\+Box}} (int row\+Start, int col\+Start, int num)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_ab6db54b0155c32c94dfb669d89f28590}{Not\+In\+Box(int row\+Start, int col\+Start, int num)}} -\/boolean tarkistaa että numero ei ole SRN$\ast$\+SRN taulukossa joka luotiin \mbox{\hyperlink{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}{Create\+Matrix()}}.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_ac79895b6c436968f36f6fc41f0bd26ec}{Not\+In\+Col}} (int j, int num)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_ac79895b6c436968f36f6fc41f0bd26ec}{Not\+In\+Col(int j, int num)}} -\/boolean tarkistaa että numero ei ole kolumnissa.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_a4ef09e3aa1b00ad4b199e3aa74bf33d7}{Not\+In\+Row}} (int i, int num)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a4ef09e3aa1b00ad4b199e3aa74bf33d7}{Not\+In\+Row(int j, int num)}} -\/boolean tarkistaa että numero ei ole rivissä.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_a080e8a3cdd3e0cb20e25caae0a289b97}{Rand\+Gen}} (int num)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a080e8a3cdd3e0cb20e25caae0a289b97}{Rand\+Gen(int num)}} -\/integer luo satunnaisen numeron.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_a7e63182ee15cbeb702d0a1925728f4ce}{Get\+One}} (int i, int j, int\mbox{[},\mbox{]} arr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a7e63182ee15cbeb702d0a1925728f4ce}{Get\+One(int i, int j, int\mbox{[},\mbox{]} arr)}} -\/integer palauttaa yhden arvon taulukosta.  \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} \mbox{\hyperlink{class_sudoku_a7293714e5b9e46c060f6412dfaf312ae}{Get\+Sudoku\+Number}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a7293714e5b9e46c060f6412dfaf312ae}{Get\+Sudoku\+Number(int i, int j)}} -\/\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} palauttaa yhden olion taulukosta.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sudoku_a2002e1a1d8add8d52add53e36b03cf34}{Set\+One}} (int i, int j, int value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_a2002e1a1d8add8d52add53e36b03cf34}{Set\+One(int i, int j, int value)}} -\/metodi asettaa yhden arvon taulukosta.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} \mbox{\hyperlink{class_sudoku_a71be49213a2f01a8b8fb3d8f71dab4d8}{current\+Sudoku\+Number}}
+\item 
+\mbox{\hyperlink{class_control_obj}{Control\+Obj}} \mbox{\hyperlink{class_sudoku_a990ba4356b9fc4ceab0965d6e964a131}{current\+Control}}
+\item 
+\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_sudoku_a670a508f86517ef68e6a2fbdb70bb667}{numbers}}
+\item 
+\mbox{\hyperlink{class_control_obj}{Control\+Obj}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_sudoku_a9d613805d785b99f8cc9c721f3994a66}{controls}}
+\item 
+Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_sudoku_a4ccb805f5ca5971982f130a423563fa6}{grids}}
+\item 
+Key\+Code\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_sudoku_aaa3e11a65c4d97b8a7a34afaa07d7470}{key\+Codes}}
+\item 
+Game\+Object \mbox{\hyperlink{class_sudoku_a13cd3f84176c31e6dc83969cc23feee8}{Sudoku\+Grid\+Panel}}
+\item 
+Game\+Object \mbox{\hyperlink{class_sudoku_a5133c177e3a44108bc5aea3ce431aa85}{Field\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_sudoku_a9cc0542b1a928c4ede0a331b5d4101fa}{Num\+Cont\+Panel}}
+\item 
+Game\+Object \mbox{\hyperlink{class_sudoku_a03bdff22b44b3b62f4ded71abdffaf0a}{Num\+Cont\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_sudoku_aa4724f6cdd54d157ffab9d1bd94ff6ac}{But\+Panel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int\mbox{[},\mbox{]} \mbox{\hyperlink{class_sudoku_acd03f9b4cdf68031563995ca48ab082a}{answers}}
+\begin{DoxyCompactList}\small\item\em Sudokun oikeat vastaukset  \end{DoxyCompactList}\item 
+static int\mbox{[},\mbox{]} \mbox{\hyperlink{class_sudoku_a385a8f86712835291d80928833463a34}{values}}
+\begin{DoxyCompactList}\small\item\em Sudokuun annetut vastaukset  \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_sudoku_afd04c43c2c531aab6962d1740fab6a69}{all\+Game\+Points}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}\label{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}} 
+\index{Sudoku@{Sudoku}!CreateMatrix@{CreateMatrix}}
+\index{CreateMatrix@{CreateMatrix}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{CreateMatrix()}{CreateMatrix()}}
+{\footnotesize\ttfamily void Sudoku.\+Create\+Matrix (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}{Create\+Matrix(int row, int col)}} -\/metodi luo koon neliöjuuren verran numeroita matrixiin.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sudoku_a1fd0d97ee85a0728a310cc76ea48a57b}\label{class_sudoku_a1fd0d97ee85a0728a310cc76ea48a57b}} 
+\index{Sudoku@{Sudoku}!GenerateRemaining@{GenerateRemaining}}
+\index{GenerateRemaining@{GenerateRemaining}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GenerateRemaining()}{GenerateRemaining()}}
+{\footnotesize\ttfamily bool Sudoku.\+Generate\+Remaining (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a1fd0d97ee85a0728a310cc76ea48a57b}{Generate\+Remaining(int i, int j)}} -\/metodi luo loput numerot.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_abe8b0c38411c4cfb98de6e63ef91d55d}\label{class_sudoku_abe8b0c38411c4cfb98de6e63ef91d55d}} 
+\index{Sudoku@{Sudoku}!GenerateSudoku@{GenerateSudoku}}
+\index{GenerateSudoku@{GenerateSudoku}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GenerateSudoku()}{GenerateSudoku()}}
+{\footnotesize\ttfamily void Sudoku.\+Generate\+Sudoku (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_abe8b0c38411c4cfb98de6e63ef91d55d}{Generate\+Sudoku()}} -\/metodilla generoidaan sudoku numerot kutsumalla metodeja.  
+
+\mbox{\Hypertarget{class_sudoku_a7e63182ee15cbeb702d0a1925728f4ce}\label{class_sudoku_a7e63182ee15cbeb702d0a1925728f4ce}} 
+\index{Sudoku@{Sudoku}!GetOne@{GetOne}}
+\index{GetOne@{GetOne}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GetOne()}{GetOne()}}
+{\footnotesize\ttfamily int Sudoku.\+Get\+One (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{arr\mbox{[},\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a7e63182ee15cbeb702d0a1925728f4ce}{Get\+One(int i, int j, int\mbox{[},\mbox{]} arr)}} -\/integer palauttaa yhden arvon taulukosta.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+{\em arr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a453a1da8882bb97cb257f8e29b9eb824}\label{class_sudoku_a453a1da8882bb97cb257f8e29b9eb824}} 
+\index{Sudoku@{Sudoku}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GetPoints()}{GetPoints()}}
+{\footnotesize\ttfamily int Sudoku.\+Get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_sudoku_a453a1da8882bb97cb257f8e29b9eb824}{Get\+Points()}} -\/integer palauttaa pelaajalle annettavien pisteiden määrän.  
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a7293714e5b9e46c060f6412dfaf312ae}\label{class_sudoku_a7293714e5b9e46c060f6412dfaf312ae}} 
+\index{Sudoku@{Sudoku}!GetSudokuNumber@{GetSudokuNumber}}
+\index{GetSudokuNumber@{GetSudokuNumber}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GetSudokuNumber()}{GetSudokuNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} Sudoku.\+Get\+Sudoku\+Number (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a7293714e5b9e46c060f6412dfaf312ae}{Get\+Sudoku\+Number(int i, int j)}} -\/\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} palauttaa yhden olion taulukosta.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_aaf7882391ab37f534442ac12465beed4}\label{class_sudoku_aaf7882391ab37f534442ac12465beed4}} 
+\index{Sudoku@{Sudoku}!GetWrong@{GetWrong}}
+\index{GetWrong@{GetWrong}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GetWrong()}{GetWrong()}}
+{\footnotesize\ttfamily int Sudoku.\+Get\+Wrong (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sudoku_a4d1ec39894ef8cae4888e9d390279206}\label{class_sudoku_a4d1ec39894ef8cae4888e9d390279206}} 
+\index{Sudoku@{Sudoku}!InitializeGame@{InitializeGame}}
+\index{InitializeGame@{InitializeGame}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{InitializeGame()}{InitializeGame()}}
+{\footnotesize\ttfamily void Sudoku.\+Initialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_sudoku_a4d1ec39894ef8cae4888e9d390279206}{Initialize\+Game()}} -\/metodilla alustetaan uusi sudoku taulu.  
+
+\mbox{\Hypertarget{class_sudoku_ab6db54b0155c32c94dfb669d89f28590}\label{class_sudoku_ab6db54b0155c32c94dfb669d89f28590}} 
+\index{Sudoku@{Sudoku}!NotInBox@{NotInBox}}
+\index{NotInBox@{NotInBox}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{NotInBox()}{NotInBox()}}
+{\footnotesize\ttfamily bool Sudoku.\+Not\+In\+Box (\begin{DoxyParamCaption}\item[{int}]{row\+Start,  }\item[{int}]{col\+Start,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_ab6db54b0155c32c94dfb669d89f28590}{Not\+In\+Box(int row\+Start, int col\+Start, int num)}} -\/boolean tarkistaa että numero ei ole SRN$\ast$\+SRN taulukossa joka luotiin \mbox{\hyperlink{class_sudoku_a40ee5a71130eeedd686b64f60783ae44}{Create\+Matrix()}}.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Start} & \\
+\hline
+{\em col\+Start} & \\
+\hline
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_ac79895b6c436968f36f6fc41f0bd26ec}\label{class_sudoku_ac79895b6c436968f36f6fc41f0bd26ec}} 
+\index{Sudoku@{Sudoku}!NotInCol@{NotInCol}}
+\index{NotInCol@{NotInCol}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{NotInCol()}{NotInCol()}}
+{\footnotesize\ttfamily bool Sudoku.\+Not\+In\+Col (\begin{DoxyParamCaption}\item[{int}]{j,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_ac79895b6c436968f36f6fc41f0bd26ec}{Not\+In\+Col(int j, int num)}} -\/boolean tarkistaa että numero ei ole kolumnissa.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & \\
+\hline
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a4ef09e3aa1b00ad4b199e3aa74bf33d7}\label{class_sudoku_a4ef09e3aa1b00ad4b199e3aa74bf33d7}} 
+\index{Sudoku@{Sudoku}!NotInRow@{NotInRow}}
+\index{NotInRow@{NotInRow}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{NotInRow()}{NotInRow()}}
+{\footnotesize\ttfamily bool Sudoku.\+Not\+In\+Row (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a4ef09e3aa1b00ad4b199e3aa74bf33d7}{Not\+In\+Row(int j, int num)}} -\/boolean tarkistaa että numero ei ole rivissä.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a410523430d408da261fef4ff7ff45640}\label{class_sudoku_a410523430d408da261fef4ff7ff45640}} 
+\index{Sudoku@{Sudoku}!OnClick\_Control@{OnClick\_Control}}
+\index{OnClick\_Control@{OnClick\_Control}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{OnClick\_Control()}{OnClick\_Control()}}
+{\footnotesize\ttfamily void Sudoku.\+On\+Click\+\_\+\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control_obj}{Control\+Obj}}}]{cobj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a410523430d408da261fef4ff7ff45640}{On\+Click\+\_\+\+Control(\+Control\+Obj cobj)}} -\/metodi toimii klikki kuuntelijana kontrolli nappuloille.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em cobj} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sudoku_a001b3e5fe6747ba5d44d3e74ed021fea}\label{class_sudoku_a001b3e5fe6747ba5d44d3e74ed021fea}} 
+\index{Sudoku@{Sudoku}!OnClick\_Number@{OnClick\_Number}}
+\index{OnClick\_Number@{OnClick\_Number}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{OnClick\_Number()}{OnClick\_Number()}}
+{\footnotesize\ttfamily void Sudoku.\+On\+Click\+\_\+\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}}}]{sn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a001b3e5fe6747ba5d44d3e74ed021fea}{On\+Click\+\_\+\+Number(\+Sudoku\+Number sn)}} -\/metodi toimii klikki kuuntelijana sudoku numeroille.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em sn} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sudoku_a080e8a3cdd3e0cb20e25caae0a289b97}\label{class_sudoku_a080e8a3cdd3e0cb20e25caae0a289b97}} 
+\index{Sudoku@{Sudoku}!RandGen@{RandGen}}
+\index{RandGen@{RandGen}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{RandGen()}{RandGen()}}
+{\footnotesize\ttfamily int Sudoku.\+Rand\+Gen (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a080e8a3cdd3e0cb20e25caae0a289b97}{Rand\+Gen(int num)}} -\/integer luo satunnaisen numeron.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Random.\+Range(1} & \\
+\hline
+{\em 1)} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_ad1280c8ce51a1dfda27b0c066c808967}\label{class_sudoku_ad1280c8ce51a1dfda27b0c066c808967}} 
+\index{Sudoku@{Sudoku}!RemoveDigits@{RemoveDigits}}
+\index{RemoveDigits@{RemoveDigits}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{RemoveDigits()}{RemoveDigits()}}
+{\footnotesize\ttfamily void Sudoku.\+Remove\+Digits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_sudoku_ad1280c8ce51a1dfda27b0c066c808967}{Remove\+Digits()}} -\/metodi poistaa K\+:n verran numeroita.  
+
+\mbox{\Hypertarget{class_sudoku_a7c042907b7cfe719c06b7894b18393cf}\label{class_sudoku_a7c042907b7cfe719c06b7894b18393cf}} 
+\index{Sudoku@{Sudoku}!SafeCheck@{SafeCheck}}
+\index{SafeCheck@{SafeCheck}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SafeCheck()}{SafeCheck()}}
+{\footnotesize\ttfamily bool Sudoku.\+Safe\+Check (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a7c042907b7cfe719c06b7894b18393cf}{Safe\+Check(int i, int j, int num)}} -\/boolean tarkistaa että numeron voi asettaa taulukkoon.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a5082287d5dd59b3d88252b49ed18ee39}\label{class_sudoku_a5082287d5dd59b3d88252b49ed18ee39}} 
+\index{Sudoku@{Sudoku}!SetControls@{SetControls}}
+\index{SetControls@{SetControls}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SetControls()}{SetControls()}}
+{\footnotesize\ttfamily void Sudoku.\+Set\+Controls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a5082287d5dd59b3d88252b49ed18ee39}{Set\+Controls()}} -\/metodi asettaa kontrollit.  
+
+\mbox{\Hypertarget{class_sudoku_a33b0db0c5eea46ddbcfb9391a876dfed}\label{class_sudoku_a33b0db0c5eea46ddbcfb9391a876dfed}} 
+\index{Sudoku@{Sudoku}!SetNumbers@{SetNumbers}}
+\index{SetNumbers@{SetNumbers}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SetNumbers()}{SetNumbers()}}
+{\footnotesize\ttfamily void Sudoku.\+Set\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a33b0db0c5eea46ddbcfb9391a876dfed}{Set\+Numbers()}} -\/metodi asettaa numerot tauluihin.  
+
+\mbox{\Hypertarget{class_sudoku_a2002e1a1d8add8d52add53e36b03cf34}\label{class_sudoku_a2002e1a1d8add8d52add53e36b03cf34}} 
+\index{Sudoku@{Sudoku}!SetOne@{SetOne}}
+\index{SetOne@{SetOne}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SetOne()}{SetOne()}}
+{\footnotesize\ttfamily void Sudoku.\+Set\+One (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a2002e1a1d8add8d52add53e36b03cf34}{Set\+One(int i, int j, int value)}} -\/metodi asettaa yhden arvon taulukosta.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sudoku_a824cc6bda6693dc73add11774cf6e3a6}\label{class_sudoku_a824cc6bda6693dc73add11774cf6e3a6}} 
+\index{Sudoku@{Sudoku}!SudokuEnd@{SudokuEnd}}
+\index{SudokuEnd@{SudokuEnd}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SudokuEnd()}{SudokuEnd()}}
+{\footnotesize\ttfamily virtual void Sudoku.\+Sudoku\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_sudoku_a824cc6bda6693dc73add11774cf6e3a6}{Sudoku\+End()}} -\/metodi kutsutaan pelin lopuksi \mbox{\hyperlink{class_manage_game_session}{Manage\+Game\+Session}} -\/luokasta.  
+
+
+
+Reimplemented in \mbox{\hyperlink{class_royale_a12d11f55f1d1da1a871c11b1f242a1ec}{Royale}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sudoku_afd04c43c2c531aab6962d1740fab6a69}\label{class_sudoku_afd04c43c2c531aab6962d1740fab6a69}} 
+\index{Sudoku@{Sudoku}!allGamePoints@{allGamePoints}}
+\index{allGamePoints@{allGamePoints}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{allGamePoints}{allGamePoints}}
+{\footnotesize\ttfamily int Sudoku.\+all\+Game\+Points\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_acd03f9b4cdf68031563995ca48ab082a}\label{class_sudoku_acd03f9b4cdf68031563995ca48ab082a}} 
+\index{Sudoku@{Sudoku}!answers@{answers}}
+\index{answers@{answers}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{answers}{answers}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} Sudoku.\+answers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Sudokun oikeat vastaukset  
+
+\mbox{\Hypertarget{class_sudoku_aa4724f6cdd54d157ffab9d1bd94ff6ac}\label{class_sudoku_aa4724f6cdd54d157ffab9d1bd94ff6ac}} 
+\index{Sudoku@{Sudoku}!ButPanel@{ButPanel}}
+\index{ButPanel@{ButPanel}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{ButPanel}{ButPanel}}
+{\footnotesize\ttfamily Game\+Object Sudoku.\+But\+Panel\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a9d613805d785b99f8cc9c721f3994a66}\label{class_sudoku_a9d613805d785b99f8cc9c721f3994a66}} 
+\index{Sudoku@{Sudoku}!controls@{controls}}
+\index{controls@{controls}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{controls}{controls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_control_obj}{Control\+Obj}} \mbox{[}$\,$\mbox{]} Sudoku.\+controls\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a990ba4356b9fc4ceab0965d6e964a131}\label{class_sudoku_a990ba4356b9fc4ceab0965d6e964a131}} 
+\index{Sudoku@{Sudoku}!currentControl@{currentControl}}
+\index{currentControl@{currentControl}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{currentControl}{currentControl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_control_obj}{Control\+Obj}} Sudoku.\+current\+Control\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a71be49213a2f01a8b8fb3d8f71dab4d8}\label{class_sudoku_a71be49213a2f01a8b8fb3d8f71dab4d8}} 
+\index{Sudoku@{Sudoku}!currentSudokuNumber@{currentSudokuNumber}}
+\index{currentSudokuNumber@{currentSudokuNumber}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{currentSudokuNumber}{currentSudokuNumber}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} Sudoku.\+current\+Sudoku\+Number\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a5133c177e3a44108bc5aea3ce431aa85}\label{class_sudoku_a5133c177e3a44108bc5aea3ce431aa85}} 
+\index{Sudoku@{Sudoku}!FieldPrefab@{FieldPrefab}}
+\index{FieldPrefab@{FieldPrefab}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{FieldPrefab}{FieldPrefab}}
+{\footnotesize\ttfamily Game\+Object Sudoku.\+Field\+Prefab\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a4ccb805f5ca5971982f130a423563fa6}\label{class_sudoku_a4ccb805f5ca5971982f130a423563fa6}} 
+\index{Sudoku@{Sudoku}!grids@{grids}}
+\index{grids@{grids}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{grids}{grids}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Sudoku.\+grids\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a3e5eeff31296b5616e19f56324665b57}\label{class_sudoku_a3e5eeff31296b5616e19f56324665b57}} 
+\index{Sudoku@{Sudoku}!K@{K}}
+\index{K@{K}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily int Sudoku.\+K = 9}
+
+
+
+K on sudokusta puuttuvien numeroiden määrä.  
+
+\mbox{\Hypertarget{class_sudoku_aaa3e11a65c4d97b8a7a34afaa07d7470}\label{class_sudoku_aaa3e11a65c4d97b8a7a34afaa07d7470}} 
+\index{Sudoku@{Sudoku}!keyCodes@{keyCodes}}
+\index{keyCodes@{keyCodes}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{keyCodes}{keyCodes}}
+{\footnotesize\ttfamily Key\+Code \mbox{[}$\,$\mbox{]} Sudoku.\+key\+Codes\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3,}
+\DoxyCodeLine{                                    KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6,}
+\DoxyCodeLine{                                    KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sudoku_ac29c826a45080e5ddfa4b84e744f7477}\label{class_sudoku_ac29c826a45080e5ddfa4b84e744f7477}} 
+\index{Sudoku@{Sudoku}!N@{N}}
+\index{N@{N}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily int Sudoku.\+N = 9}
+
+
+
+N on sudokun koko.  
+
+\mbox{\Hypertarget{class_sudoku_a670a508f86517ef68e6a2fbdb70bb667}\label{class_sudoku_a670a508f86517ef68e6a2fbdb70bb667}} 
+\index{Sudoku@{Sudoku}!numbers@{numbers}}
+\index{numbers@{numbers}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{numbers}{numbers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sudoku_number}{Sudoku\+Number}} \mbox{[}$\,$\mbox{]} Sudoku.\+numbers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a9cc0542b1a928c4ede0a331b5d4101fa}\label{class_sudoku_a9cc0542b1a928c4ede0a331b5d4101fa}} 
+\index{Sudoku@{Sudoku}!NumContPanel@{NumContPanel}}
+\index{NumContPanel@{NumContPanel}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{NumContPanel}{NumContPanel}}
+{\footnotesize\ttfamily Game\+Object Sudoku.\+Num\+Cont\+Panel\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a03bdff22b44b3b62f4ded71abdffaf0a}\label{class_sudoku_a03bdff22b44b3b62f4ded71abdffaf0a}} 
+\index{Sudoku@{Sudoku}!NumContPrefab@{NumContPrefab}}
+\index{NumContPrefab@{NumContPrefab}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{NumContPrefab}{NumContPrefab}}
+{\footnotesize\ttfamily Game\+Object Sudoku.\+Num\+Cont\+Prefab\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a9b486868883ccd595e747bf245be8f21}\label{class_sudoku_a9b486868883ccd595e747bf245be8f21}} 
+\index{Sudoku@{Sudoku}!SRN@{SRN}}
+\index{SRN@{SRN}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SRN}{SRN}}
+{\footnotesize\ttfamily int Sudoku.\+SRN}
+
+
+
+SRN on neliöjuuri sudokun koosta.  
+
+\mbox{\Hypertarget{class_sudoku_a13cd3f84176c31e6dc83969cc23feee8}\label{class_sudoku_a13cd3f84176c31e6dc83969cc23feee8}} 
+\index{Sudoku@{Sudoku}!SudokuGridPanel@{SudokuGridPanel}}
+\index{SudokuGridPanel@{SudokuGridPanel}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{SudokuGridPanel}{SudokuGridPanel}}
+{\footnotesize\ttfamily Game\+Object Sudoku.\+Sudoku\+Grid\+Panel\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sudoku_a385a8f86712835291d80928833463a34}\label{class_sudoku_a385a8f86712835291d80928833463a34}} 
+\index{Sudoku@{Sudoku}!values@{values}}
+\index{values@{values}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} Sudoku.\+values\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Sudokuun annetut vastaukset  
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Projects/\+Speedoku\+Royale/\+Assets/\+Scripts/\+Sudoku/\mbox{\hyperlink{_sudoku_8cs}{Sudoku.\+cs}}\end{DoxyCompactItemize}

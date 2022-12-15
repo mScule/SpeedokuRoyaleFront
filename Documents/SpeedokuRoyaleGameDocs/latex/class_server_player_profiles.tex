@@ -1,0 +1,141 @@
+\hypertarget{class_server_player_profiles}{}\doxysection{Server\+Player\+Profiles Class Reference}
+\label{class_server_player_profiles}\index{ServerPlayerProfiles@{ServerPlayerProfiles}}
+
+
+Contains methods to communicate with the server API concerning the players\textquotesingle{} profiles.   
+
+
+Inheritance diagram for Server\+Player\+Profiles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_server_player_profiles}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_server_player_profiles_a478d9f1ad53b3900f4a0994c1c62f9a3}{Log\+In}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to log a player in on the server.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_player_profiles_a3774a9d7e8453d76ae26df72b5ac832d}{Register\+User}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to register a new player profile on the server.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_player_profiles_a167660274d1c688832fd533dd16635e4}{Get\+And\+Set\+User\+Data}} (ulong user\+Id, string username)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to get user data from the server and set the data locally.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_player_profiles_a2b507a7c0239926b68eb2d5a59d3f8f4}{Delete\+User\+Profile}} ()
+\begin{DoxyCompactList}\small\item\em Start a coroutine to delete the local user\textquotesingle{}s profile on the server.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_player_profiles_ad5920c04707f534460681de1234cf334}{Change\+Password}} (string password, string new\+Password)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to change the local user\textquotesingle{}s password on the server.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_player_profiles_aecfb8d59a317917c551613d7657f83a4}{Get\+Leaderboard\+Profiles}} ()
+\begin{DoxyCompactList}\small\item\em Start a coroutine to get leaderboard data from the server.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_server_player_profiles}{Server\+Player\+Profiles}} \mbox{\hyperlink{class_server_player_profiles_a889e71331f2dcc351cda463b620fceb6}{Instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains methods to communicate with the server API concerning the players\textquotesingle{} profiles.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_player_profiles_ad5920c04707f534460681de1234cf334}\label{class_server_player_profiles_ad5920c04707f534460681de1234cf334}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Change\+Password (\begin{DoxyParamCaption}\item[{string}]{password,  }\item[{string}]{new\+Password }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to change the local user\textquotesingle{}s password on the server.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & \\
+\hline
+{\em new\+Password} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_player_profiles_a2b507a7c0239926b68eb2d5a59d3f8f4}\label{class_server_player_profiles_a2b507a7c0239926b68eb2d5a59d3f8f4}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!DeleteUserProfile@{DeleteUserProfile}}
+\index{DeleteUserProfile@{DeleteUserProfile}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{DeleteUserProfile()}{DeleteUserProfile()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Delete\+User\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to delete the local user\textquotesingle{}s profile on the server.  
+
+\mbox{\Hypertarget{class_server_player_profiles_a167660274d1c688832fd533dd16635e4}\label{class_server_player_profiles_a167660274d1c688832fd533dd16635e4}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!GetAndSetUserData@{GetAndSetUserData}}
+\index{GetAndSetUserData@{GetAndSetUserData}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{GetAndSetUserData()}{GetAndSetUserData()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Get\+And\+Set\+User\+Data (\begin{DoxyParamCaption}\item[{ulong}]{user\+Id,  }\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to get user data from the server and set the data locally.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em username} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_player_profiles_aecfb8d59a317917c551613d7657f83a4}\label{class_server_player_profiles_aecfb8d59a317917c551613d7657f83a4}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!GetLeaderboardProfiles@{GetLeaderboardProfiles}}
+\index{GetLeaderboardProfiles@{GetLeaderboardProfiles}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{GetLeaderboardProfiles()}{GetLeaderboardProfiles()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Get\+Leaderboard\+Profiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to get leaderboard data from the server.  
+
+\mbox{\Hypertarget{class_server_player_profiles_a478d9f1ad53b3900f4a0994c1c62f9a3}\label{class_server_player_profiles_a478d9f1ad53b3900f4a0994c1c62f9a3}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!LogIn@{LogIn}}
+\index{LogIn@{LogIn}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{LogIn()}{LogIn()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Log\+In (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to log a player in on the server.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_player_profiles_a3774a9d7e8453d76ae26df72b5ac832d}\label{class_server_player_profiles_a3774a9d7e8453d76ae26df72b5ac832d}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily void Server\+Player\+Profiles.\+Register\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to register a new player profile on the server.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_player_profiles_a889e71331f2dcc351cda463b620fceb6}\label{class_server_player_profiles_a889e71331f2dcc351cda463b620fceb6}} 
+\index{ServerPlayerProfiles@{ServerPlayerProfiles}!Instance@{Instance}}
+\index{Instance@{Instance}!ServerPlayerProfiles@{ServerPlayerProfiles}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_server_player_profiles}{Server\+Player\+Profiles}} Server\+Player\+Profiles.\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Projects/\+Speedoku\+Royale/\+Assets/\+Scripts/\+Networking/\mbox{\hyperlink{_server_player_profiles_8cs}{Server\+Player\+Profiles.\+cs}}\end{DoxyCompactItemize}

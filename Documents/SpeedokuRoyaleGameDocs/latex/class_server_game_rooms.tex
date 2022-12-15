@@ -1,0 +1,116 @@
+\hypertarget{class_server_game_rooms}{}\doxysection{Server\+Game\+Rooms Class Reference}
+\label{class_server_game_rooms}\index{ServerGameRooms@{ServerGameRooms}}
+
+
+Contains methods to communicate with the server API concerning the game rooms.   
+
+
+Inheritance diagram for Server\+Game\+Rooms\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_server_game_rooms}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_server_game_rooms_a382bcb10d1a1406c2b297273b7ce8669}{Add\+Score}} (ulong score)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to add an amount of points equal to the value of the {\itshape score}  parameter for the user on the server side.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_game_rooms_a750eb9f65bcf5d84d5c364884c1ebe72}{Get\+Available\+Game\+Rooms}} ()
+\begin{DoxyCompactList}\small\item\em Start a coroutine to get available game rooms and join a game room with an open spot for the player.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_game_rooms_a244cca9e28a41f90e5111e1938c23882}{Join\+Game\+Room}} (string room\+Name)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to join a game room which name is equal to {\itshape room\+Name} .  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_game_rooms_af8548f387e32d7590c590662da6da40d}{Get\+Game\+Room\+Status}} (string room\+Name)
+\begin{DoxyCompactList}\small\item\em Start a coroutine to get the status of a game room which name is equal to {\itshape room\+Name} .  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_game_rooms_aa1c2c3e4d9c8a138b160ad3b990a886a}{Drop\+Last\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Drop a player with the lowest score. Don\textquotesingle{}t drop a player if there is only one left.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_server_game_rooms}{Server\+Game\+Rooms}} \mbox{\hyperlink{class_server_game_rooms_a0c20d700d727a23357511fecf56cbac6}{Instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains methods to communicate with the server API concerning the game rooms.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_game_rooms_a382bcb10d1a1406c2b297273b7ce8669}\label{class_server_game_rooms_a382bcb10d1a1406c2b297273b7ce8669}} 
+\index{ServerGameRooms@{ServerGameRooms}!AddScore@{AddScore}}
+\index{AddScore@{AddScore}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
+{\footnotesize\ttfamily void Server\+Game\+Rooms.\+Add\+Score (\begin{DoxyParamCaption}\item[{ulong}]{score }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to add an amount of points equal to the value of the {\itshape score}  parameter for the user on the server side.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & The amount of points to add\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_game_rooms_aa1c2c3e4d9c8a138b160ad3b990a886a}\label{class_server_game_rooms_aa1c2c3e4d9c8a138b160ad3b990a886a}} 
+\index{ServerGameRooms@{ServerGameRooms}!DropLastPlayer@{DropLastPlayer}}
+\index{DropLastPlayer@{DropLastPlayer}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{DropLastPlayer()}{DropLastPlayer()}}
+{\footnotesize\ttfamily void Server\+Game\+Rooms.\+Drop\+Last\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Drop a player with the lowest score. Don\textquotesingle{}t drop a player if there is only one left.  
+
+\mbox{\Hypertarget{class_server_game_rooms_a750eb9f65bcf5d84d5c364884c1ebe72}\label{class_server_game_rooms_a750eb9f65bcf5d84d5c364884c1ebe72}} 
+\index{ServerGameRooms@{ServerGameRooms}!GetAvailableGameRooms@{GetAvailableGameRooms}}
+\index{GetAvailableGameRooms@{GetAvailableGameRooms}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{GetAvailableGameRooms()}{GetAvailableGameRooms()}}
+{\footnotesize\ttfamily void Server\+Game\+Rooms.\+Get\+Available\+Game\+Rooms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to get available game rooms and join a game room with an open spot for the player.  
+
+\mbox{\Hypertarget{class_server_game_rooms_af8548f387e32d7590c590662da6da40d}\label{class_server_game_rooms_af8548f387e32d7590c590662da6da40d}} 
+\index{ServerGameRooms@{ServerGameRooms}!GetGameRoomStatus@{GetGameRoomStatus}}
+\index{GetGameRoomStatus@{GetGameRoomStatus}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{GetGameRoomStatus()}{GetGameRoomStatus()}}
+{\footnotesize\ttfamily void Server\+Game\+Rooms.\+Get\+Game\+Room\+Status (\begin{DoxyParamCaption}\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to get the status of a game room which name is equal to {\itshape room\+Name} .  
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_game_rooms_a244cca9e28a41f90e5111e1938c23882}\label{class_server_game_rooms_a244cca9e28a41f90e5111e1938c23882}} 
+\index{ServerGameRooms@{ServerGameRooms}!JoinGameRoom@{JoinGameRoom}}
+\index{JoinGameRoom@{JoinGameRoom}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{JoinGameRoom()}{JoinGameRoom()}}
+{\footnotesize\ttfamily void Server\+Game\+Rooms.\+Join\+Game\+Room (\begin{DoxyParamCaption}\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Start a coroutine to join a game room which name is equal to {\itshape room\+Name} .  
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_game_rooms_a0c20d700d727a23357511fecf56cbac6}\label{class_server_game_rooms_a0c20d700d727a23357511fecf56cbac6}} 
+\index{ServerGameRooms@{ServerGameRooms}!Instance@{Instance}}
+\index{Instance@{Instance}!ServerGameRooms@{ServerGameRooms}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_server_game_rooms}{Server\+Game\+Rooms}} Server\+Game\+Rooms.\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Projects/\+Speedoku\+Royale/\+Assets/\+Scripts/\+Networking/\mbox{\hyperlink{_server_game_rooms_8cs}{Server\+Game\+Rooms.\+cs}}\end{DoxyCompactItemize}
