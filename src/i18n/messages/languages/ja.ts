@@ -32,6 +32,14 @@ const ja: Messages = {
 	// Credits
 	"title-credits": "作者情報",
 
+	// Links
+	"title-links": "リンク",
+	"article-links": "プロジェクトに関するその他の情報",
+	"link-unity-docs": "Unity プロジェクトのドキュメント",
+	"link-server-docs": "サーバー バックエンドのドキュメント",
+	"link-technical-docs": "技術文書",
+	"link-manual": "ユーザーマニュアル",
+
 	// Page not found
 	"title-not-found": "ページが見つかりません…",
 

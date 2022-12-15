@@ -47,6 +47,14 @@ const fi: Messages = {
 	// Credits
 	"title-credits": "Tekijät",
 
+	// Links
+	"title-links": "Dokumentit",
+	"article-links": "Alla on linkit eri projektiin liittyviin dokumentteihin.",
+	"link-unity-docs": "Unity projektin dokumentaatio",
+	"link-server-docs": "Serveri projektin dokumentaatio",
+	"link-technical-docs": "Tekninen dokumentaatio",
+	"link-manual": "Käyttöohje",
+
 	// Page not found
 	"title-not-found": "Ohhoh...",
 

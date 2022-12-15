@@ -23,6 +23,14 @@ export default interface Message {
 	// Credits
 	"title-credits": string
 
+	// Links
+	"title-links": string
+	"article-links": string
+	"link-unity-docs": string
+	"link-server-docs": string
+	"link-technical-docs": string
+	"link-manual": string
+
 	// Page not found
 	"title-not-found": string
 	"article-page-not-found": string
