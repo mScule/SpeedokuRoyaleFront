@@ -1,0 +1,146 @@
+\hypertarget{class_timer}{}\doxysection{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+The game\textquotesingle{}s timer functionality.   
+
+
+Inheritance diagram for Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_af61ff6a202a2d5961c8f507a82a6a76f}{Start\+Timer}} ()
+\item 
+void \mbox{\hyperlink{class_timer_af1eeeae9d4f7993f53cb893e552acaba}{Start\+Checking\+To\+Drop\+Players}} ()
+\begin{DoxyCompactList}\small\item\em Start checking if players should be dropped when a multiplayer game session starts.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_acf34fce4a10e15dda33c3a311932751f}{Stop\+Timer}} ()
+\item 
+string \mbox{\hyperlink{class_timer_aff63ea1a473a39c42e9e3fbb6006fbf2}{Get\+Elapsed\+Time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{class_timer_a65926111bfc34cd9d68d016e468240c0}{time\+Limit}} = 100000L
+\begin{DoxyCompactList}\small\item\em How long a single game lasts  \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_timer_aa3e05de8325c119bf51fc1cc54842c8a}{text\+TMP}}
+\begin{DoxyCompactList}\small\item\em The timer\textquotesingle{}s UI text element  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_timer}{Timer}} \mbox{\hyperlink{class_timer_a2633d1b9dcbf4cea653a6b765a55f3ba}{Instance}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{class_timer_ab650043ef84458358e6e2c07fc1920c9}{time\+Long}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current game time  \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_timer_afb6463df804b2bdd090fb84c3261752f}{elapsed\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How long a game has lasted  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_timer_a20ea3757f43477ef7b98329b358b09f6}{is\+Running}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the timer running  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The game\textquotesingle{}s timer functionality.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_aff63ea1a473a39c42e9e3fbb6006fbf2}\label{class_timer_aff63ea1a473a39c42e9e3fbb6006fbf2}} 
+\index{Timer@{Timer}!GetElapsedTime@{GetElapsedTime}}
+\index{GetElapsedTime@{GetElapsedTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{GetElapsedTime()}{GetElapsedTime()}}
+{\footnotesize\ttfamily string Timer.\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_timer_af1eeeae9d4f7993f53cb893e552acaba}\label{class_timer_af1eeeae9d4f7993f53cb893e552acaba}} 
+\index{Timer@{Timer}!StartCheckingToDropPlayers@{StartCheckingToDropPlayers}}
+\index{StartCheckingToDropPlayers@{StartCheckingToDropPlayers}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{StartCheckingToDropPlayers()}{StartCheckingToDropPlayers()}}
+{\footnotesize\ttfamily void Timer.\+Start\+Checking\+To\+Drop\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start checking if players should be dropped when a multiplayer game session starts.  
+
+\mbox{\Hypertarget{class_timer_af61ff6a202a2d5961c8f507a82a6a76f}\label{class_timer_af61ff6a202a2d5961c8f507a82a6a76f}} 
+\index{Timer@{Timer}!StartTimer@{StartTimer}}
+\index{StartTimer@{StartTimer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{StartTimer()}{StartTimer()}}
+{\footnotesize\ttfamily void Timer.\+Start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_timer_acf34fce4a10e15dda33c3a311932751f}\label{class_timer_acf34fce4a10e15dda33c3a311932751f}} 
+\index{Timer@{Timer}!StopTimer@{StopTimer}}
+\index{StopTimer@{StopTimer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{StopTimer()}{StopTimer()}}
+{\footnotesize\ttfamily void Timer.\+Stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_timer_a2633d1b9dcbf4cea653a6b765a55f3ba}\label{class_timer_a2633d1b9dcbf4cea653a6b765a55f3ba}} 
+\index{Timer@{Timer}!Instance@{Instance}}
+\index{Instance@{Instance}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_timer}{Timer}} Timer.\+Instance\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_timer_aa3e05de8325c119bf51fc1cc54842c8a}\label{class_timer_aa3e05de8325c119bf51fc1cc54842c8a}} 
+\index{Timer@{Timer}!textTMP@{textTMP}}
+\index{textTMP@{textTMP}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{textTMP}{textTMP}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI Timer.\+text\+TMP}
+
+
+
+The timer\textquotesingle{}s UI text element  
+
+\mbox{\Hypertarget{class_timer_a65926111bfc34cd9d68d016e468240c0}\label{class_timer_a65926111bfc34cd9d68d016e468240c0}} 
+\index{Timer@{Timer}!timeLimit@{timeLimit}}
+\index{timeLimit@{timeLimit}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{timeLimit}{timeLimit}}
+{\footnotesize\ttfamily long Timer.\+time\+Limit = 100000L}
+
+
+
+How long a single game lasts  
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_timer_afb6463df804b2bdd090fb84c3261752f}\label{class_timer_afb6463df804b2bdd090fb84c3261752f}} 
+\index{Timer@{Timer}!elapsedTime@{elapsedTime}}
+\index{elapsedTime@{elapsedTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{elapsedTime}{elapsedTime}}
+{\footnotesize\ttfamily long Timer.\+elapsed\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+How long a game has lasted  
+
+\mbox{\Hypertarget{class_timer_a20ea3757f43477ef7b98329b358b09f6}\label{class_timer_a20ea3757f43477ef7b98329b358b09f6}} 
+\index{Timer@{Timer}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily bool Timer.\+is\+Running\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Is the timer running  
+
+\mbox{\Hypertarget{class_timer_ab650043ef84458358e6e2c07fc1920c9}\label{class_timer_ab650043ef84458358e6e2c07fc1920c9}} 
+\index{Timer@{Timer}!timeLong@{timeLong}}
+\index{timeLong@{timeLong}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{timeLong}{timeLong}}
+{\footnotesize\ttfamily long Timer.\+time\+Long\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Current game time  
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Projects/\+Speedoku\+Royale/\+Assets/\+Scripts/\+Game\+Management/\mbox{\hyperlink{_timer_8cs}{Timer.\+cs}}\end{DoxyCompactItemize}
