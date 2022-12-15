@@ -1,0 +1,233 @@
+\hypertarget{class_multiplayer_runtime}{}\doxysection{Multiplayer\+Runtime Class Reference}
+\label{class_multiplayer_runtime}\index{MultiplayerRuntime@{MultiplayerRuntime}}
+
+
+Class for the Multiplayer runtime.   
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_multiplayer_runtime_ac22c0bdb4f245be8df46e26e6088e181}{Player\+Amt}} ()
+\begin{DoxyCompactList}\small\item\em Returns the count of the players currently inside the game.  \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_score_data}{Score\+Data}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_multiplayer_runtime_ac8473b91b980b7fd9a3b7c6c7f14c80c}{Score\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Returns list of player scores.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_multiplayer_runtime_a03cc994550e18f56d857b7e50ee2ab25}{Has\+Player}} (ulong player\+Id)
+\begin{DoxyCompactList}\small\item\em Checks if room has a specific player.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_runtime_a59435d2c62285211bb1dc1d4f6676c88}{Clear\+Room}} ()
+\begin{DoxyCompactList}\small\item\em Gives new name for the room, and removes players from the room.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_multiplayer_runtime_a1fd63f7a84c657d200b8bbdec46f488e}{Kill\+Player}} (ulong player\+Id)
+\begin{DoxyCompactList}\small\item\em Removes player from the room.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_runtime_a677eff39dc45529487c3a010e5aaaffd}{Add\+Player}} (ulong player\+Id)
+\begin{DoxyCompactList}\small\item\em Adds player to the room.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_runtime_a4f06c8e47d653eaa61e43c1e44646f4b}{Finish\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Ends the game and figures out the winner.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_runtime_ad2b8a00aae4736112a8f37a148c03e1a}{Update\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Updates the game clock.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_runtime_a88201cfff8a7024bef72169e0ef29fcd}{Add\+Score}} (ulong player\+Id, ulong amt)
+\begin{DoxyCompactList}\small\item\em Adds score for given player.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ILogger$<$ \mbox{\hyperlink{class_multiplayer_runtime_controller}{Multiplayer\+Runtime\+Controller}} $>$? \mbox{\hyperlink{class_multiplayer_runtime_a0a3bce621d0aa9930942a47d8bd04aca}{Logger}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_multiplayer_runtime_a427e4c02c70e4aff50eb5689ce160960}{Room\+Name}} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_multiplayer_runtime_a174711c7a103a410ecf8fe1f1eedf98f}{Game\+Length}} = 2\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+byte \mbox{\hyperlink{class_multiplayer_runtime_af424191721aa5bdb79fa8f83d6aec869}{Room\+Size}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{_runtime_state_8cs_a939eab61376b3ba811f243e6cd87046e}{Runtime\+State}} \mbox{\hyperlink{class_multiplayer_runtime_abc5e7ed887d61a54c74fb088e473599a}{State}} = Runtime\+State.\+Waiting\+For\+Players\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Date\+Time? \mbox{\hyperlink{class_multiplayer_runtime_af02c75590711d524372324184260e708}{Start\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Key\+Value\+Pair$<$ ulong, ulong $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_multiplayer_runtime_af7d71cbfe2f7dd3f38d3220cd7b4ed61}{Scores}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+ulong? \mbox{\hyperlink{class_multiplayer_runtime_a2d982c753e017e861be0775b0ed731c4}{Winner}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Multiplayer runtime.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_multiplayer_runtime_a677eff39dc45529487c3a010e5aaaffd}\label{class_multiplayer_runtime_a677eff39dc45529487c3a010e5aaaffd}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!AddPlayer@{AddPlayer}}
+\index{AddPlayer@{AddPlayer}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{AddPlayer()}{AddPlayer()}}
+{\footnotesize\ttfamily void Multiplayer\+Runtime.\+Add\+Player (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Adds player to the room.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & \mbox{\hyperlink{class_player}{Player}} id.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_multiplayer_runtime_a88201cfff8a7024bef72169e0ef29fcd}\label{class_multiplayer_runtime_a88201cfff8a7024bef72169e0ef29fcd}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!AddScore@{AddScore}}
+\index{AddScore@{AddScore}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
+{\footnotesize\ttfamily void Multiplayer\+Runtime.\+Add\+Score (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{ulong}]{amt }\end{DoxyParamCaption})}
+
+
+
+Adds score for given player.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & \mbox{\hyperlink{class_player}{Player}} id.\\
+\hline
+{\em amt} & Score amount.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_multiplayer_runtime_a59435d2c62285211bb1dc1d4f6676c88}\label{class_multiplayer_runtime_a59435d2c62285211bb1dc1d4f6676c88}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!ClearRoom@{ClearRoom}}
+\index{ClearRoom@{ClearRoom}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{ClearRoom()}{ClearRoom()}}
+{\footnotesize\ttfamily void Multiplayer\+Runtime.\+Clear\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gives new name for the room, and removes players from the room.  
+
+\mbox{\Hypertarget{class_multiplayer_runtime_a4f06c8e47d653eaa61e43c1e44646f4b}\label{class_multiplayer_runtime_a4f06c8e47d653eaa61e43c1e44646f4b}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!FinishGame@{FinishGame}}
+\index{FinishGame@{FinishGame}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{FinishGame()}{FinishGame()}}
+{\footnotesize\ttfamily void Multiplayer\+Runtime.\+Finish\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the game and figures out the winner.  
+
+\mbox{\Hypertarget{class_multiplayer_runtime_a03cc994550e18f56d857b7e50ee2ab25}\label{class_multiplayer_runtime_a03cc994550e18f56d857b7e50ee2ab25}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!HasPlayer@{HasPlayer}}
+\index{HasPlayer@{HasPlayer}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{HasPlayer()}{HasPlayer()}}
+{\footnotesize\ttfamily bool Multiplayer\+Runtime.\+Has\+Player (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Checks if room has a specific player.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & \mbox{\hyperlink{class_player}{Player}} id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if exists, false if not.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_multiplayer_runtime_a1fd63f7a84c657d200b8bbdec46f488e}\label{class_multiplayer_runtime_a1fd63f7a84c657d200b8bbdec46f488e}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!KillPlayer@{KillPlayer}}
+\index{KillPlayer@{KillPlayer}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{KillPlayer()}{KillPlayer()}}
+{\footnotesize\ttfamily bool Multiplayer\+Runtime.\+Kill\+Player (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Removes player from the room.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & \mbox{\hyperlink{class_player}{Player}} id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if removal was successful, otherwise false.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_multiplayer_runtime_ac22c0bdb4f245be8df46e26e6088e181}\label{class_multiplayer_runtime_ac22c0bdb4f245be8df46e26e6088e181}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!PlayerAmt@{PlayerAmt}}
+\index{PlayerAmt@{PlayerAmt}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{PlayerAmt()}{PlayerAmt()}}
+{\footnotesize\ttfamily int Multiplayer\+Runtime.\+Player\+Amt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the count of the players currently inside the game.  
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_player}{Player}} count.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_multiplayer_runtime_ac8473b91b980b7fd9a3b7c6c7f14c80c}\label{class_multiplayer_runtime_ac8473b91b980b7fd9a3b7c6c7f14c80c}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!ScoreInfo@{ScoreInfo}}
+\index{ScoreInfo@{ScoreInfo}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{ScoreInfo()}{ScoreInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_score_data}{Score\+Data}}\mbox{[}$\,$\mbox{]} Multiplayer\+Runtime.\+Score\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns list of player scores.  
+
+\begin{DoxyReturn}{Returns}
+Scoreboard.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_multiplayer_runtime_ad2b8a00aae4736112a8f37a148c03e1a}\label{class_multiplayer_runtime_ad2b8a00aae4736112a8f37a148c03e1a}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!UpdateTimer@{UpdateTimer}}
+\index{UpdateTimer@{UpdateTimer}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{UpdateTimer()}{UpdateTimer()}}
+{\footnotesize\ttfamily void Multiplayer\+Runtime.\+Update\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the game clock.  
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_multiplayer_runtime_a174711c7a103a410ecf8fe1f1eedf98f}\label{class_multiplayer_runtime_a174711c7a103a410ecf8fe1f1eedf98f}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!GameLength@{GameLength}}
+\index{GameLength@{GameLength}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{GameLength}{GameLength}}
+{\footnotesize\ttfamily int Multiplayer\+Runtime.\+Game\+Length = 2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_a0a3bce621d0aa9930942a47d8bd04aca}\label{class_multiplayer_runtime_a0a3bce621d0aa9930942a47d8bd04aca}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!Logger@{Logger}}
+\index{Logger@{Logger}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{Logger}{Logger}}
+{\footnotesize\ttfamily ILogger$<$\mbox{\hyperlink{class_multiplayer_runtime_controller}{Multiplayer\+Runtime\+Controller}}$>$? Multiplayer\+Runtime.\+Logger\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_a427e4c02c70e4aff50eb5689ce160960}\label{class_multiplayer_runtime_a427e4c02c70e4aff50eb5689ce160960}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!RoomName@{RoomName}}
+\index{RoomName@{RoomName}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{RoomName}{RoomName}}
+{\footnotesize\ttfamily string Multiplayer\+Runtime.\+Room\+Name = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_af424191721aa5bdb79fa8f83d6aec869}\label{class_multiplayer_runtime_af424191721aa5bdb79fa8f83d6aec869}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!RoomSize@{RoomSize}}
+\index{RoomSize@{RoomSize}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{RoomSize}{RoomSize}}
+{\footnotesize\ttfamily byte Multiplayer\+Runtime.\+Room\+Size = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_af7d71cbfe2f7dd3f38d3220cd7b4ed61}\label{class_multiplayer_runtime_af7d71cbfe2f7dd3f38d3220cd7b4ed61}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!Scores@{Scores}}
+\index{Scores@{Scores}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{Scores}{Scores}}
+{\footnotesize\ttfamily Key\+Value\+Pair$<$ulong, ulong$>$ \mbox{[}$\,$\mbox{]} Multiplayer\+Runtime.\+Scores\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_af02c75590711d524372324184260e708}\label{class_multiplayer_runtime_af02c75590711d524372324184260e708}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!StartTime@{StartTime}}
+\index{StartTime@{StartTime}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{StartTime}{StartTime}}
+{\footnotesize\ttfamily Date\+Time? Multiplayer\+Runtime.\+Start\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_abc5e7ed887d61a54c74fb088e473599a}\label{class_multiplayer_runtime_abc5e7ed887d61a54c74fb088e473599a}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!State@{State}}
+\index{State@{State}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_runtime_state_8cs_a939eab61376b3ba811f243e6cd87046e}{Runtime\+State}} Multiplayer\+Runtime.\+State = Runtime\+State.\+Waiting\+For\+Players\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_a2d982c753e017e861be0775b0ed731c4}\label{class_multiplayer_runtime_a2d982c753e017e861be0775b0ed731c4}} 
+\index{MultiplayerRuntime@{MultiplayerRuntime}!Winner@{Winner}}
+\index{Winner@{Winner}!MultiplayerRuntime@{MultiplayerRuntime}}
+\doxysubsubsection{\texorpdfstring{Winner}{Winner}}
+{\footnotesize\ttfamily ulong? Multiplayer\+Runtime.\+Winner = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Speedoku\+Royale\+Server/\+Source/\+Game\+Host/\mbox{\hyperlink{_multiplayer_runtime_8cs}{Multiplayer\+Runtime.\+cs}}\end{DoxyCompactItemize}

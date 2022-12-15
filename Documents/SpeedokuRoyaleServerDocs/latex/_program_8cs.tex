@@ -1,0 +1,142 @@
+\hypertarget{_program_8cs}{}\doxysection{Speedoku\+Royale\+Server/\+Source/\+Program.cs File Reference}
+\label{_program_8cs}\index{SpeedokuRoyaleServer/Source/Program.cs@{SpeedokuRoyaleServer/Source/Program.cs}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a722ac2945a674938177820969a8bc20b}{Add\+Db\+Context$<$ Maria\+Db\+Context $>$}} (options=$>$ options.\+Use\+My\+Sql(builder.\+Configuration.\+Get\+Connection\+String(\char`\"{}Maria\+DB\char`\"{}), new Maria\+Db\+Server\+Version(new Version(10, 7, 3))))
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_abd37df61e1ca76886b9510ac562baf9f}{Add\+Scoped$<$ Player\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_acb7820532e3ae405eaece96b130213a4}{Add\+Scoped$<$ Item\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a68a5bd6b672efb7b580a9b2a651e1e4d}{Add\+Scoped$<$ Inventory\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a1484935a0919bf0cf8fc7518724e9046}{Add\+Scoped$<$ Multiplayer\+Session\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a6b6a44fd2f71ea7377306a7c1de7081a}{Add\+Scoped$<$ Multiplayer\+Game\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae0102ab82ebcd4fffe71c0e6e700e8c0}{Add\+Scoped$<$ Singleplayer\+Game\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ac92b13bd13d29dff412c264c4ec2683f}{Add\+Controllers}} ().Add\+Json\+Options(x
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}{Add\+Endpoints\+Api\+Explorer}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae0ce43c019a5621d731d0c622c793644}{Add\+Swagger\+Gen}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_af92ed522ef7e8b6c8d1707509ae8eb2e}{Add\+Cors}} (options=$>$ \{ options.\+Add\+Policy(name\+:\+My\+Allow\+Specific\+Origins, \mbox{\hyperlink{_program_8cs_ad4b0198707878d4565a9545701212f8c}{builder}}=$>$ \{ builder.\+With\+Origins(\char`\"{}http\+://localhost\+:80\char`\"{}, \char`\"{}http\+://localhost\+:8000\char`\"{},);\});\})
+\item 
+\mbox{\hyperlink{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}{if}} (app.\+Environment.\+Is\+Development())
+\item 
+app. \mbox{\hyperlink{_program_8cs_a9e2ee3170aa6279b68eefd1651f7d96c}{Map\+Controllers}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Web\+Application\+Builder \mbox{\hyperlink{_program_8cs_ad4b0198707878d4565a9545701212f8c}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+Web\+Application \mbox{\hyperlink{_program_8cs_a5fbddc9d732471b5a07bc1d8ff4d0c17}{app}} = builder.\+Build()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_program_8cs_ac92b13bd13d29dff412c264c4ec2683f}\label{_program_8cs_ac92b13bd13d29dff412c264c4ec2683f}} 
+\index{Program.cs@{Program.cs}!AddControllers@{AddControllers}}
+\index{AddControllers@{AddControllers}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddControllers()}{AddControllers()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Controllers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_af92ed522ef7e8b6c8d1707509ae8eb2e}\label{_program_8cs_af92ed522ef7e8b6c8d1707509ae8eb2e}} 
+\index{Program.cs@{Program.cs}!AddCors@{AddCors}}
+\index{AddCors@{AddCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCors()}{AddCors()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Cors (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Add\+Policy(name\+:\+My\+Allow\+Specific\+Origins, \mbox{\hyperlink{_program_8cs_ad4b0198707878d4565a9545701212f8c}{builder}}=$>$ \{ builder.\+With\+Origins(\char`\"{}http\+://localhost\+:80\char`\"{}, \char`\"{}http\+://localhost\+:8000\char`\"{},);\});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a722ac2945a674938177820969a8bc20b}\label{_program_8cs_a722ac2945a674938177820969a8bc20b}} 
+\index{Program.cs@{Program.cs}!AddDbContext$<$ MariaDbContext $>$@{AddDbContext$<$ MariaDbContext $>$}}
+\index{AddDbContext$<$ MariaDbContext $>$@{AddDbContext$<$ MariaDbContext $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDbContext$<$ MariaDbContext $>$()}{AddDbContext< MariaDbContext >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Db\+Context$<$ \mbox{\hyperlink{class_maria_db_context}{Maria\+Db\+Context}} $>$ (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{options.}]{Use\+My\+Sqlbuilder.\+Configuration.\+Get\+Connection\+String(\char`\"{}\+Maria\+DB\char`\"{}), new Maria\+Db\+Server\+Version(new Version(10, 7, 3)) }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}\label{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}} 
+\index{Program.cs@{Program.cs}!AddEndpointsApiExplorer@{AddEndpointsApiExplorer}}
+\index{AddEndpointsApiExplorer@{AddEndpointsApiExplorer}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddEndpointsApiExplorer()}{AddEndpointsApiExplorer()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Endpoints\+Api\+Explorer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a68a5bd6b672efb7b580a9b2a651e1e4d}\label{_program_8cs_a68a5bd6b672efb7b580a9b2a651e1e4d}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ InventoryService $>$@{AddScoped$<$ InventoryService $>$}}
+\index{AddScoped$<$ InventoryService $>$@{AddScoped$<$ InventoryService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ InventoryService $>$()}{AddScoped< InventoryService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_inventory_service}{Inventory\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_acb7820532e3ae405eaece96b130213a4}\label{_program_8cs_acb7820532e3ae405eaece96b130213a4}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ ItemService $>$@{AddScoped$<$ ItemService $>$}}
+\index{AddScoped$<$ ItemService $>$@{AddScoped$<$ ItemService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ ItemService $>$()}{AddScoped< ItemService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_item_service}{Item\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a6b6a44fd2f71ea7377306a7c1de7081a}\label{_program_8cs_a6b6a44fd2f71ea7377306a7c1de7081a}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ MultiplayerGameService $>$@{AddScoped$<$ MultiplayerGameService $>$}}
+\index{AddScoped$<$ MultiplayerGameService $>$@{AddScoped$<$ MultiplayerGameService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ MultiplayerGameService $>$()}{AddScoped< MultiplayerGameService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_multiplayer_game_service}{Multiplayer\+Game\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a1484935a0919bf0cf8fc7518724e9046}\label{_program_8cs_a1484935a0919bf0cf8fc7518724e9046}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ MultiplayerSessionService $>$@{AddScoped$<$ MultiplayerSessionService $>$}}
+\index{AddScoped$<$ MultiplayerSessionService $>$@{AddScoped$<$ MultiplayerSessionService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ MultiplayerSessionService $>$()}{AddScoped< MultiplayerSessionService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_multiplayer_session_service}{Multiplayer\+Session\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_abd37df61e1ca76886b9510ac562baf9f}\label{_program_8cs_abd37df61e1ca76886b9510ac562baf9f}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ PlayerService $>$@{AddScoped$<$ PlayerService $>$}}
+\index{AddScoped$<$ PlayerService $>$@{AddScoped$<$ PlayerService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ PlayerService $>$()}{AddScoped< PlayerService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_player_service}{Player\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ae0102ab82ebcd4fffe71c0e6e700e8c0}\label{_program_8cs_ae0102ab82ebcd4fffe71c0e6e700e8c0}} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ SingleplayerGameService $>$@{AddScoped$<$ SingleplayerGameService $>$}}
+\index{AddScoped$<$ SingleplayerGameService $>$@{AddScoped$<$ SingleplayerGameService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ SingleplayerGameService $>$()}{AddScoped< SingleplayerGameService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{class_singleplayer_game_service}{Singleplayer\+Game\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ae0ce43c019a5621d731d0c622c793644}\label{_program_8cs_ae0ce43c019a5621d731d0c622c793644}} 
+\index{Program.cs@{Program.cs}!AddSwaggerGen@{AddSwaggerGen}}
+\index{AddSwaggerGen@{AddSwaggerGen}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSwaggerGen()}{AddSwaggerGen()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Swagger\+Gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}\label{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}} 
+\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{app.\+Environment.}]{Is\+Development() }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a9e2ee3170aa6279b68eefd1651f7d96c}\label{_program_8cs_a9e2ee3170aa6279b68eefd1651f7d96c}} 
+\index{Program.cs@{Program.cs}!MapControllers@{MapControllers}}
+\index{MapControllers@{MapControllers}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapControllers()}{MapControllers()}}
+{\footnotesize\ttfamily app. Map\+Controllers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_program_8cs_a5fbddc9d732471b5a07bc1d8ff4d0c17}\label{_program_8cs_a5fbddc9d732471b5a07bc1d8ff4d0c17}} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily Web\+Application app = builder.\+Build()}
+
+\mbox{\Hypertarget{_program_8cs_ad4b0198707878d4565a9545701212f8c}\label{_program_8cs_ad4b0198707878d4565a9545701212f8c}} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily Web\+Application\+Builder builder = Web\+Application.\+Create\+Builder(args)}
+

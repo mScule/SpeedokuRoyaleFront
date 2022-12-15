@@ -1,0 +1,71 @@
+\hypertarget{class_inventory_service}{}\doxysection{Inventory\+Service Class Reference}
+\label{class_inventory_service}\index{InventoryService@{InventoryService}}
+Inheritance diagram for Inventory\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inventory_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inventory_service_a77ad85bd4e5c33effa4a3ab689e259b8}{Inventory\+Service}} (\mbox{\hyperlink{class_maria_db_context}{Maria\+Db\+Context}} \mbox{\hyperlink{class_service_a3fb8f1b9254336915335e10dc8ac6d20}{db\+Context}})
+\item 
+async Task$<$ ulong?$>$ \mbox{\hyperlink{class_inventory_service_a52207c83b143deb855c9fd2a777c52b2}{Create}} (\mbox{\hyperlink{class_inventory}{Inventory}} inventory)
+\item 
+async Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ \mbox{\hyperlink{class_inventory_service_ae4007f8203f73d1aa195106e91005727}{Find\+All}} ()
+\item 
+async Task$<$ \mbox{\hyperlink{class_inventory}{Inventory}}?$>$ \mbox{\hyperlink{class_inventory_service_abe921d909d0145ec3161b59d9c15351b}{Find\+One}} (ulong id)
+\item 
+async Task$<$ int $>$ \mbox{\hyperlink{class_inventory_service_a34c3b54a1d96946961888b205c8999e9}{Update}} (\mbox{\hyperlink{class_inventory}{Inventory}} inventory)
+\item 
+async Task$<$ int $>$ \mbox{\hyperlink{class_inventory_service_ab0a0bddb97ce2b8deeb5ada3a7875a32}{Delete}} (ulong id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inventory_service_a77ad85bd4e5c33effa4a3ab689e259b8}\label{class_inventory_service_a77ad85bd4e5c33effa4a3ab689e259b8}} 
+\index{InventoryService@{InventoryService}!InventoryService@{InventoryService}}
+\index{InventoryService@{InventoryService}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{InventoryService()}{InventoryService()}}
+{\footnotesize\ttfamily Inventory\+Service.\+Inventory\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_maria_db_context}{Maria\+Db\+Context}}}]{db\+Context }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_service_a52207c83b143deb855c9fd2a777c52b2}\label{class_inventory_service_a52207c83b143deb855c9fd2a777c52b2}} 
+\index{InventoryService@{InventoryService}!Create@{Create}}
+\index{Create@{Create}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily async Task$<$ ulong?$>$ Inventory\+Service.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}}}]{inventory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_service_ab0a0bddb97ce2b8deeb5ada3a7875a32}\label{class_inventory_service_ab0a0bddb97ce2b8deeb5ada3a7875a32}} 
+\index{InventoryService@{InventoryService}!Delete@{Delete}}
+\index{Delete@{Delete}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$ int $>$ Inventory\+Service.\+Delete (\begin{DoxyParamCaption}\item[{ulong}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_service_ae4007f8203f73d1aa195106e91005727}\label{class_inventory_service_ae4007f8203f73d1aa195106e91005727}} 
+\index{InventoryService@{InventoryService}!FindAll@{FindAll}}
+\index{FindAll@{FindAll}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{FindAll()}{FindAll()}}
+{\footnotesize\ttfamily async Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ Inventory\+Service.\+Find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_service_abe921d909d0145ec3161b59d9c15351b}\label{class_inventory_service_abe921d909d0145ec3161b59d9c15351b}} 
+\index{InventoryService@{InventoryService}!FindOne@{FindOne}}
+\index{FindOne@{FindOne}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{FindOne()}{FindOne()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_inventory}{Inventory}}?$>$ Inventory\+Service.\+Find\+One (\begin{DoxyParamCaption}\item[{ulong}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_service_a34c3b54a1d96946961888b205c8999e9}\label{class_inventory_service_a34c3b54a1d96946961888b205c8999e9}} 
+\index{InventoryService@{InventoryService}!Update@{Update}}
+\index{Update@{Update}!InventoryService@{InventoryService}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily async Task$<$ int $>$ Inventory\+Service.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}}}]{inventory }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Speedoku\+Royale\+Server/\+Source/\+Services/\+Maria\+Db/\+Collectables/\mbox{\hyperlink{_inventory_service_8cs}{Inventory\+Service.\+cs}}\end{DoxyCompactItemize}

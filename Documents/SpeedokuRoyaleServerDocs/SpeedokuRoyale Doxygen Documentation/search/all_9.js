@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['id_0',['Id',['../class_indexed.html#a389f9483b106826a721c214444ab6eab',1,'Indexed']]],
+  ['idgenerator_2ecs_1',['IdGenerator.cs',['../_id_generator_8cs.html',1,'']]],
+  ['if_2',['if',['../_program_8cs.html#a79a944c7f0e25196ca3c5a8638b919b9',1,'Program.cs']]],
+  ['indexed_3',['Indexed',['../class_indexed.html',1,'']]],
+  ['indexed_2ecs_4',['Indexed.cs',['../_indexed_8cs.html',1,'']]],
+  ['ingame_5',['InGame',['../_runtime_state_8cs.html#a939eab61376b3ba811f243e6cd87046ea7f3d370e94c8b1fea09838572013d8ec',1,'RuntimeState.cs']]],
+  ['ingamestatus_6',['InGameStatus',['../class_multiplayer_runtime_controller.html#a98d6f361b8ee54c6d0c05099d19098d3',1,'MultiplayerRuntimeController']]],
+  ['initial_7',['Initial',['../class_speedoku_royale_server_1_1_migrations_1_1_initial.html',1,'SpeedokuRoyaleServer::Migrations']]],
+  ['inventories_8',['Inventories',['../class_maria_db_context.html#ad2c88a9d9799a296deb08ec6ed8ff0bb',1,'MariaDbContext.Inventories()'],['../class_item.html#ace13237308f0dfa95ce4080a141c4793',1,'Item.Inventories()'],['../class_player.html#ac4220cd198017bf1645583cab29689e5',1,'Player.Inventories()']]],
+  ['inventory_9',['Inventory',['../class_inventory.html',1,'']]],
+  ['inventory_2ecs_10',['Inventory.cs',['../_inventory_8cs.html',1,'']]],
+  ['inventorycontroller_11',['InventoryController',['../class_inventory_controller.html',1,'InventoryController'],['../class_inventory_controller.html#a430fa0c4e681ee3f967a4e164b7d49fe',1,'InventoryController.InventoryController()']]],
+  ['inventorycontroller_2ecs_12',['InventoryController.cs',['../_inventory_controller_8cs.html',1,'']]],
+  ['inventoryservice_13',['InventoryService',['../class_inventory_service.html',1,'InventoryService'],['../class_inventory_service.html#a77ad85bd4e5c33effa4a3ab689e259b8',1,'InventoryService.InventoryService()']]],
+  ['inventoryservice_2ecs_14',['InventoryService.cs',['../_inventory_service_8cs.html',1,'']]],
+  ['item_15',['Item',['../class_item.html',1,'Item'],['../class_inventory.html#a3e4bc0c8b9eb9e092bfd168ba247d339',1,'Inventory.Item()']]],
+  ['item_2ecs_16',['Item.cs',['../_item_8cs.html',1,'']]],
+  ['itemcontroller_17',['ItemController',['../class_item_controller.html',1,'ItemController'],['../class_item_controller.html#abedb50fa32e9ec38cb4341ae76179521',1,'ItemController.ItemController()']]],
+  ['itemcontroller_2ecs_18',['ItemController.cs',['../_item_controller_8cs.html',1,'']]],
+  ['itemid_19',['ItemId',['../class_inventory.html#ac2575b824560d316129df9520ded8e64',1,'Inventory']]],
+  ['items_20',['Items',['../class_maria_db_context.html#aebc5c1668f7b867f374104282d15a6e8',1,'MariaDbContext']]],
+  ['itemservice_21',['ItemService',['../class_item_service.html',1,'ItemService'],['../class_item_service.html#ae1fa9556fedca2f8c711c16fd21cda38',1,'ItemService.ItemService()']]],
+  ['itemservice_2ecs_22',['ItemService.cs',['../_item_service_8cs.html',1,'']]]
+];

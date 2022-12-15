@@ -1,0 +1,78 @@
+\hypertarget{class_multiplayer_runtime_controller}{}\doxysection{Multiplayer\+Runtime\+Controller Class Reference}
+\label{class_multiplayer_runtime_controller}\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+Inheritance diagram for Multiplayer\+Runtime\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_multiplayer_runtime_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_multiplayer_runtime_controller_a41d2a5045bc429f28d4c3bd500d61991}{Multiplayer\+Runtime\+Controller}} (ILogger$<$ \mbox{\hyperlink{class_multiplayer_runtime_controller}{Multiplayer\+Runtime\+Controller}} $>$ logger, \mbox{\hyperlink{class_multiplayer_session_service}{Multiplayer\+Session\+Service}} multiplayer\+Session\+Service, \mbox{\hyperlink{class_multiplayer_game_service}{Multiplayer\+Game\+Service}} multiplayer\+Game\+Service, \mbox{\hyperlink{class_player_service}{Player\+Service}} player\+Service, \mbox{\hyperlink{class_item_service}{Item\+Service}} item\+Service)
+\item 
+async Task$<$ Action\+Result$<$ bool $>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_aee7a8e6ec0b86ec12696d435c3cea40a}{Join}} (ulong player\+Id, string room\+Name)
+\item 
+async Task$<$ Action\+Result$<$ bool $>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_a4245a51d0a5da3607503c271ba44a146}{Kill}} (ulong player\+Id, string room\+Name)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{_runtime_state_8cs_a939eab61376b3ba811f243e6cd87046e}{Runtime\+State}} $>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_a8a3c954cfed632deb85dbf84f1b1fc5a}{Status}} (string room\+Name)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_game_info}{Game\+Info}} $>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_a98d6f361b8ee54c6d0c05099d19098d3}{In\+Game\+Status}} (string room\+Name)
+\item 
+async Task$<$ Action\+Result$<$ bool $>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_a93fef5b09a2802f41a5629274d0c6b15}{Add\+Score}} (ulong player\+Id, ulong scores, string room\+Name)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_room_info}{Room\+Info}}\mbox{[}$\,$\mbox{]}$>$ $>$ \mbox{\hyperlink{class_multiplayer_runtime_controller_aaa04987228b329dccd35bcd1f905fc60}{Get}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_a41d2a5045bc429f28d4c3bd500d61991}\label{class_multiplayer_runtime_controller_a41d2a5045bc429f28d4c3bd500d61991}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{MultiplayerRuntimeController()}{MultiplayerRuntimeController()}}
+{\footnotesize\ttfamily Multiplayer\+Runtime\+Controller.\+Multiplayer\+Runtime\+Controller (\begin{DoxyParamCaption}\item[{ILogger$<$ \mbox{\hyperlink{class_multiplayer_runtime_controller}{Multiplayer\+Runtime\+Controller}} $>$}]{logger,  }\item[{\mbox{\hyperlink{class_multiplayer_session_service}{Multiplayer\+Session\+Service}}}]{multiplayer\+Session\+Service,  }\item[{\mbox{\hyperlink{class_multiplayer_game_service}{Multiplayer\+Game\+Service}}}]{multiplayer\+Game\+Service,  }\item[{\mbox{\hyperlink{class_player_service}{Player\+Service}}}]{player\+Service,  }\item[{\mbox{\hyperlink{class_item_service}{Item\+Service}}}]{item\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_a93fef5b09a2802f41a5629274d0c6b15}\label{class_multiplayer_runtime_controller_a93fef5b09a2802f41a5629274d0c6b15}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!AddScore@{AddScore}}
+\index{AddScore@{AddScore}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ bool $>$ $>$ Multiplayer\+Runtime\+Controller.\+Add\+Score (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{ulong}]{scores,  }\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_aaa04987228b329dccd35bcd1f905fc60}\label{class_multiplayer_runtime_controller_aaa04987228b329dccd35bcd1f905fc60}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!Get@{Get}}
+\index{Get@{Get}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_room_info}{Room\+Info}}\mbox{[}$\,$\mbox{]}$>$ $>$ Multiplayer\+Runtime\+Controller.\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_a98d6f361b8ee54c6d0c05099d19098d3}\label{class_multiplayer_runtime_controller_a98d6f361b8ee54c6d0c05099d19098d3}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!InGameStatus@{InGameStatus}}
+\index{InGameStatus@{InGameStatus}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{InGameStatus()}{InGameStatus()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_game_info}{Game\+Info}} $>$ $>$ Multiplayer\+Runtime\+Controller.\+In\+Game\+Status (\begin{DoxyParamCaption}\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_aee7a8e6ec0b86ec12696d435c3cea40a}\label{class_multiplayer_runtime_controller_aee7a8e6ec0b86ec12696d435c3cea40a}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!Join@{Join}}
+\index{Join@{Join}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{Join()}{Join()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ bool $>$ $>$ Multiplayer\+Runtime\+Controller.\+Join (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_a4245a51d0a5da3607503c271ba44a146}\label{class_multiplayer_runtime_controller_a4245a51d0a5da3607503c271ba44a146}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!Kill@{Kill}}
+\index{Kill@{Kill}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{Kill()}{Kill()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ bool $>$ $>$ Multiplayer\+Runtime\+Controller.\+Kill (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_multiplayer_runtime_controller_a8a3c954cfed632deb85dbf84f1b1fc5a}\label{class_multiplayer_runtime_controller_a8a3c954cfed632deb85dbf84f1b1fc5a}} 
+\index{MultiplayerRuntimeController@{MultiplayerRuntimeController}!Status@{Status}}
+\index{Status@{Status}!MultiplayerRuntimeController@{MultiplayerRuntimeController}}
+\doxysubsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{_runtime_state_8cs_a939eab61376b3ba811f243e6cd87046e}{Runtime\+State}} $>$ $>$ Multiplayer\+Runtime\+Controller.\+Status (\begin{DoxyParamCaption}\item[{string}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Speedoku\+Royale\+Server/\+Source/\+Controllers/\+Game\+Host/\mbox{\hyperlink{_multiplayer_runtime_controller_8cs}{Multiplayer\+Runtime\+Controller.\+cs}}\end{DoxyCompactItemize}

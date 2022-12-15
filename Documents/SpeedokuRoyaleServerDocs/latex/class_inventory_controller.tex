@@ -1,0 +1,70 @@
+\hypertarget{class_inventory_controller}{}\doxysection{Inventory\+Controller Class Reference}
+\label{class_inventory_controller}\index{InventoryController@{InventoryController}}
+Inheritance diagram for Inventory\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inventory_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inventory_controller_a430fa0c4e681ee3f967a4e164b7d49fe}{Inventory\+Controller}} (ILogger$<$ \mbox{\hyperlink{class_inventory_controller}{Inventory\+Controller}} $>$ logger, \mbox{\hyperlink{class_inventory_service}{Inventory\+Service}} inventory\+Service)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ \mbox{\hyperlink{class_inventory_controller_a6fccae420ebc4a6f46ff60de6e17b5e7}{Post}} (ulong player\+Id, ulong item\+Id)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ \mbox{\hyperlink{class_inventory_controller_a89b124b655ab3731d8e54b5e91294899}{Put}} (ulong player\+Id, ulong item\+Id)
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ \mbox{\hyperlink{class_inventory_controller_ab5ab6cb4418ff3d2f4f05348a21c34fd}{Get}} (ulong id)
+\item 
+async Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ \mbox{\hyperlink{class_inventory_controller_a515f282ff03b9c23bbbe4fce19d7866f}{Get}} ()
+\item 
+async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_item}{Item}} $>$ $>$ \mbox{\hyperlink{class_inventory_controller_a59d36e749a1d487107abb6bfcb80d90a}{Delete}} (ulong id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inventory_controller_a430fa0c4e681ee3f967a4e164b7d49fe}\label{class_inventory_controller_a430fa0c4e681ee3f967a4e164b7d49fe}} 
+\index{InventoryController@{InventoryController}!InventoryController@{InventoryController}}
+\index{InventoryController@{InventoryController}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{InventoryController()}{InventoryController()}}
+{\footnotesize\ttfamily Inventory\+Controller.\+Inventory\+Controller (\begin{DoxyParamCaption}\item[{ILogger$<$ \mbox{\hyperlink{class_inventory_controller}{Inventory\+Controller}} $>$}]{logger,  }\item[{\mbox{\hyperlink{class_inventory_service}{Inventory\+Service}}}]{inventory\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_controller_a59d36e749a1d487107abb6bfcb80d90a}\label{class_inventory_controller_a59d36e749a1d487107abb6bfcb80d90a}} 
+\index{InventoryController@{InventoryController}!Delete@{Delete}}
+\index{Delete@{Delete}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_item}{Item}} $>$ $>$ Inventory\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{ulong}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_controller_a515f282ff03b9c23bbbe4fce19d7866f}\label{class_inventory_controller_a515f282ff03b9c23bbbe4fce19d7866f}} 
+\index{InventoryController@{InventoryController}!Get@{Get}}
+\index{Get@{Get}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ Inventory\+Controller.\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_controller_ab5ab6cb4418ff3d2f4f05348a21c34fd}\label{class_inventory_controller_ab5ab6cb4418ff3d2f4f05348a21c34fd}} 
+\index{InventoryController@{InventoryController}!Get@{Get}}
+\index{Get@{Get}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ Inventory\+Controller.\+Get (\begin{DoxyParamCaption}\item[{ulong}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_controller_a6fccae420ebc4a6f46ff60de6e17b5e7}\label{class_inventory_controller_a6fccae420ebc4a6f46ff60de6e17b5e7}} 
+\index{InventoryController@{InventoryController}!Post@{Post}}
+\index{Post@{Post}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{Post()}{Post()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ Inventory\+Controller.\+Post (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{ulong}]{item\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_inventory_controller_a89b124b655ab3731d8e54b5e91294899}\label{class_inventory_controller_a89b124b655ab3731d8e54b5e91294899}} 
+\index{InventoryController@{InventoryController}!Put@{Put}}
+\index{Put@{Put}!InventoryController@{InventoryController}}
+\doxysubsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ \mbox{\hyperlink{class_inventory}{Inventory}} $>$ $>$ Inventory\+Controller.\+Put (\begin{DoxyParamCaption}\item[{ulong}]{player\+Id,  }\item[{ulong}]{item\+Id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Speedoku\+Royale\+Server/\+Source/\+Controllers/\+Collectables/\mbox{\hyperlink{_inventory_controller_8cs}{Inventory\+Controller.\+cs}}\end{DoxyCompactItemize}

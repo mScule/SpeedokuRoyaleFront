@@ -1,0 +1,73 @@
+\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Prerequisites}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md1}
+Make sure you have these installed
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Maria\+DB 10.\+7.\+3}} \href{https://mariadb.org/download/?t=mariadb&o=true&p=mariadb&r=10.7.3&os=windows&cpu=x86_64&pkg=msi}{\texttt{ https\+://mariadb.\+org/download/?t=mariadb\&o=true\&p=mariadb\&r=10.\+7.\+3\&os=windows\&cpu=x86\+\_\+64\&pkg=msi}}
+\item $\ast$$\ast$.NET 6$\ast$$\ast$ (Both {\bfseries{SDK}}, and {\bfseries{Runtime}}) \href{https://dotnet.microsoft.com/en-us/download}{\texttt{ https\+://dotnet.\+microsoft.\+com/en-\/us/download}}
+\item {\bfseries{Entity framework tools}} {\ttfamily dotnet tool install -\/-\/global dotnet-\/ef}
+\item {\bfseries{VS Code}} \href{https://code.visualstudio.com/}{\texttt{ https\+://code.\+visualstudio.\+com/}}
+\item Latest version of {\bfseries{C\# Extension}} By Microsoft for VS Code {\itshape Download it from the Extensions marketplace}
+\end{DoxyItemize}
+
+Create following files in the project root, and replace dummy text places with actual information.\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{appsettings.\+Development.\+json}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  "{}Logging"{}: \{}
+\DoxyCodeLine{    "{}LogLevel"{}: \{}
+\DoxyCodeLine{      "{}Default"{}: "{}Information"{},}
+\DoxyCodeLine{      "{}Microsoft.AspNetCore"{}: "{}Warning"{}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \},}
+\DoxyCodeLine{  "{}ConnectionStrings"{}: \{}
+\DoxyCodeLine{    "{}MariaDB"{}: "{}server=localhost;user id=YOUR\_USER\_NAME\_GOES\_HERE;password=YOUR\_PW\_GOES\_HERE;database=speedoku\_royale\_db"{}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{appsettings.\+json}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  "{}Logging"{}: \{}
+\DoxyCodeLine{    "{}LogLevel"{}: \{}
+\DoxyCodeLine{      "{}Default"{}: "{}Information"{},}
+\DoxyCodeLine{      "{}Microsoft.AspNetCore"{}: "{}Warning"{}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{  \},}
+\DoxyCodeLine{  "{}AllowedHosts"{}: "{}*"{}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+To initialize the Maria\+DB SQL Database, run the {\ttfamily speedoku\+\_\+royale\+\_\+db\+\_\+test\+\_\+init.\+sql} query in the database server. You can use Heidi\+SQL for this.
+
+After this you should be able to run the server with {\ttfamily dotnet run} command. After it starts, go to \href{https://localhost:8000/swagger/index.html}{\texttt{ https\+://localhost\+:8000/swagger/index.\+html}} and try out the different api features that they work.\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Useful commands}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md4}
+Trust the HTTPS development certificate by running the following command {\bfseries{Windows only}}
+
+{\ttfamily dotnet dev-\/certs https -\/-\/trust}
+
+Start server
+
+{\ttfamily dotnet run}
+
+You can shut down the server with {\bfseries{CTRL + C}}\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md5}{}\doxysection{VS Code tips}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md5}
+If you think that there\textquotesingle{}s errors that doesn\textquotesingle{}t make sense, it might be because of Omni\+Sharp is acting up. Restart Omni\+Sharp by opening Quick\+Open with {\bfseries{CTRL + P}} and writing following line and press {\bfseries{Enter}}\+:
+
+{\ttfamily \texorpdfstring{$>$}{>} Omnisharp\+: Restart Omni\+Sharp}\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md6}{}\doxysection{Migrations}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md6}
+Add new migration\+: {\ttfamily dotnet ef migrations add NAME\+\_\+\+GOES\+\_\+\+HERE}
+
+Update database\+: {\ttfamily dotnet ef database update}\hypertarget{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{For hard resetting migrations as a whole}\label{md__speedoku_royale_server__r_e_a_d_m_e_autotoc_md7}
+Do this only in situations where you don\textquotesingle{}t mind losing data. Wipes all migration data and the database and build new from current dbsets.
+
+Before you do this, be sure that the code can be built, because compiling errors will prevent commands below from executing correctly.
+
+
+\begin{DoxyEnumerate}
+\item Delete Migrations folder
+\item Run {\ttfamily dotnet ef database drop -\/f -\/v}
+\item Run {\ttfamily dotnet ef migrations add Initial}
+\item Run {\ttfamily dotnet ef database update} 
+\end{DoxyEnumerate}
