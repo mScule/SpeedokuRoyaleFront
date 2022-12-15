@@ -4,6 +4,9 @@ import {Navigateable} from "@/components/navigateable"
 import {useTranslate, Translate} from "@/i18n"
 import {Column} from "@/design/components/column"
 
+import Manual from "./pdf/manual.pdf"
+import TechnicalDocument from "./pdf/technical-document.pdf"
+
 /**
  * Component holding the contents of the page that contains the game itself.
  *
@@ -19,10 +22,10 @@ export const Docs: FC = () => {
 			</p>
 
 			<Column>
-				<a href="">
+				<a href={Manual}>
 					<Translate id="link-manual" />
 				</a>
-				<a href="">
+				<a href={TechnicalDocument}>
 					<Translate id="link-technical-docs" />
 				</a>
 				<a href="https://users.metropolia.fi/~jonathme/SpeedokuRoyaleDocs2.0/html/index.html">
